@@ -1,0 +1,12 @@
+@use './settings' as *;
+
+@use '../components/about/about' as about;
+@use '../components/courses/courses' as courses;
+@use '../components/footer/footer' as footer;
+@use '../components/header/header' as header;
+@use '../components/introduction/introduction' as intro;
+@use '../components/projectCard/projectCard' as card;
+@use '../components/projectModal/projectModal' as modal;
+@use '../components/projects/projects' as projects;
+@use '../components/skills/skills' as skills;
+@use '../components/contact/contact' as contact;
