@@ -2,7 +2,7 @@
 
 function Introduction() {
   return (
-    <div>Introduction</div>
+    <div className="introduction-container">Introduction</div>
   )
 }
 

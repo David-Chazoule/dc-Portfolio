@@ -1,9 +1,5 @@
-
-
 function Projects() {
-  return (
-    <div>Projects</div>
-  )
+  return <div className="projects-container">Projects</div>;
 }
 
-export default Projects
+export default Projects;
