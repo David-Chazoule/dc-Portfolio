@@ -1,3 +1,5 @@
+@use "../../styles/settings" as *;
+
 .header-container {
   display: flex;
   position: fixed;
@@ -21,5 +23,12 @@
       align-items: center;
       justify-content: space-around;
     }
+  }
+
+  &.light {
+    background-color: $themeLightPrimaire;
+  }
+  &.dark {
+    background-color: $themeDarkPrimaire;
   }
 }
