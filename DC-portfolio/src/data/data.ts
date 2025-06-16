@@ -1,27 +1,58 @@
-import type { AboutDataType } from "./data.types";
+import type { AboutDataType, navbarType } from "./data.types";
+import {
+  FaHome,
+  FaUser,
+  FaFile,
+  FaCode,
+  FaProjectDiagram,
+  FaEnvelope,
+} from "react-icons/fa";
+
 
 /* Menu navBar */
 
-export const navbar = [
+export const navbar: navbarType[] = [
   {
+    id: "home",
     menuFr: "ACCUEIL",
     menuEn: "HOME",
-    route: "Portfolio",
+    target: "home",
+    icon: FaHome,
   },
   {
+    id: "about",
     menuFr: "A PROPOS",
     menuEn: "ABOUT",
-    route: "About",
+    target: "about",
+    icon: FaUser,
   },
   {
+    id: "courses",
+    menuFr: "PARCOURS",
+    menuEn: "COURSES",
+    target: "courses",
+    icon: FaFile,
+  },
+  {
+    id: "skills",
+    menuFr: "COMPETENCES",
+    menuEn: "SKILLS",
+    target: "skills",
+    icon: FaProjectDiagram,
+  },
+  {
+    id: "projects",
     menuFr: "PROJETS",
     menuEn: "PROJECTS",
-    route: "Projects",
+    target: "projects",
+    icon: FaCode,
   },
   {
+    id: "contact",
     menuFr: "CONTACTEZ MOI",
     menuEn: "CONTACT ME",
-    route: "Contact",
+    target: "contact",
+    icon: FaEnvelope,
   },
 ];
 

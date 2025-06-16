@@ -16,7 +16,7 @@ function About() {
         <div className="presentation">
           <div className="competence"></div>
           <div className="about">
-            {language === "fr" ? aboutData.aboutTxtFr : aboutData.aboutTxtEn}
+            <p>{language === "fr" ? aboutData.aboutTxtFr : aboutData.aboutTxtEn}</p>
           </div>
         </div>
       </div>

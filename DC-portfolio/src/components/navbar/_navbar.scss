@@ -1,0 +1,32 @@
+.navbar-container {
+  display: flex;
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .list-nav {
+    display: flex;
+
+    background-color: red;
+    padding: 20px;
+
+    li {
+      margin: 10px;
+      list-style-type: none;
+
+      button {
+        border-radius: 25px;
+        border: none;
+        padding: 6px;
+        cursor: pointer;
+        .nav-icon {
+          color: black;
+          width: 30px;
+          padding: 2px;
+        }
+      }
+    }
+  }
+}

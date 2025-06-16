@@ -1,3 +1,5 @@
+@use "../../styles/settings" as *;
+
 .projects-container {
   display: flex;
   width: 100%;
@@ -5,4 +7,11 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 166, 0, 0.467);
+
+  &.light {
+    background-color: $themeLightPrimaire;
+  }
+  &.dark {
+    background-color: $themeDarkPrimaire;
+  }
 }

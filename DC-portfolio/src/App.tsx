@@ -5,6 +5,7 @@ import Courses from "./components/courses/Courses";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Introduction from "./components/introduction/Introduction";
+import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 
@@ -12,12 +13,30 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Introduction />
-      <About />
-      <Courses />
-      <Skills />
-      <Projects />
-      <Contact />
+      <div id="home">
+        {" "}
+        <Introduction />
+      </div>
+      <div id="about">
+        {" "}
+        <About />
+      </div>
+      <div id="courses">
+        {" "}
+        <Courses />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="projects">
+        {" "}
+        <Projects />
+      </div>
+      <div id="contact">
+        {" "}
+        <Contact />
+      </div>
+      <Navbar />
       <Footer />
     </div>
   );

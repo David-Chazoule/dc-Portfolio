@@ -1,3 +1,5 @@
+@use "../../styles/settings" as *;
+
 .contact-container {
   display: flex;
   width: 100%;
@@ -5,4 +7,11 @@
   align-items: center;
   justify-content: center;
   background-color: bisque;
+
+  &.light {
+    background-color: $themeLightPrimaire;
+  }
+  &.dark {
+    background-color: $themeDarkPrimaire;
+  }
 }

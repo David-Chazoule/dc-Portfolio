@@ -1,5 +1,11 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
+import { LanguageContext } from "../../context/LanguageContext";
+
 function Projects() {
-  return <div className="projects-container">Projects</div>;
+  const { theme } = useContext(ThemeContext);
+  const { language } = useContext(LanguageContext);
+  return <div className={`projects-container ${theme}`}>Projects</div>;
 }
 
 export default Projects;

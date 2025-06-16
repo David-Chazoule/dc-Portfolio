@@ -1,8 +1,12 @@
-
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
+import { LanguageContext } from "../../context/LanguageContext";
 
 function Skills() {
+   const { theme } = useContext(ThemeContext);
+  const { language } = useContext(LanguageContext);
   return (
-    <div className="skills-container">Skills</div>
+    <div className={`skills-container ${theme}`}>Skills</div>
   )
 }
 
