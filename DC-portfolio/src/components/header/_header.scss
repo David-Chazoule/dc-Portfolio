@@ -13,7 +13,7 @@
 
   .header-box {
     display: flex;
-    width: 1000px;
+    width: 620px;
     align-items: center;
     justify-content: space-around;
 
@@ -32,8 +32,8 @@
     background-color: $themeDarkPrimaire;
   }
 
-  &.scrolled{
--webkit-box-shadow: -1px 11px 25px -2px rgba(0,0,0,0.51); 
-box-shadow: -1px 11px 25px -2px rgba(0,0,0,0.51);
+  &.scrolled {
+    -webkit-box-shadow: -1px 11px 25px -2px rgba(0, 0, 0, 0.51);
+    box-shadow: -1px 11px 25px -2px rgba(0, 0, 0, 0.51);
   }
 }

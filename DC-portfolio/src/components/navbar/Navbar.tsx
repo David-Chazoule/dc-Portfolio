@@ -20,17 +20,17 @@ function Navbar() {
   };
   return (
     <div className="navbar-container">
-      <ul className="list-nav">
+      <ul className={`list-nav ${theme}`}>
         {navbar.map((item) => {
           const IconComponent = item.icon;
           return (
             <li key={item.id} className="nav-item">
               <button
                 onClick={() => scrollTo(item.target)}
-                className="nav-link"
+                className={`nav-link `}
                 title={language === "fr" ? item.menuFr : item.menuEn}
               >
-                <IconComponent className="nav-icon" />
+                <IconComponent className={`nav-icon  ${theme==='light'?'iconLight':'iconDark'}`} />
               </button>
             </li>
           );

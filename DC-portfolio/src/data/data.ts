@@ -8,7 +8,6 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-
 /* Menu navBar */
 
 export const navbar: navbarType[] = [
@@ -79,6 +78,12 @@ export const aboutData: AboutDataType = {
   skillTitleFr: "Langages et outils que j'utilise :",
   skillTitleEn: " Languages and tools I use:",
   skillImg: ["HTML", "CSS", "JS", "SASS", "REACT", "NODE", "GITHUB"],
+  skillOneFr: "Créativité",
+  skillOneEn: "Creativity",
+  skillTwoFr: "Adaptation",
+  skillTwoEn: "Adaptability",
+  skillThreeFr: "Autonomie",
+  skillThreeEn: "Autonomy",
 };
 
 /* skills data */

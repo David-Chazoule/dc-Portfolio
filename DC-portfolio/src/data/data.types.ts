@@ -8,13 +8,18 @@ export interface AboutDataType {
   skillTitleFr: string;
   skillTitleEn: string;
   skillImg: string[];
+  skillOneFr: string;
+  skillOneEn: string;
+  skillTwoFr: string;
+  skillTwoEn: string;
+  skillThreeFr: string;
+  skillThreeEn: string;
 }
 
-
 export interface navbarType {
- id:string,
-     menuFr: string,
-     menuEn: string,
-     target :string,
-     icon: IconType, 
+  id: string;
+  menuFr: string;
+  menuEn: string;
+  target: string;
+  icon: IconType;
 }

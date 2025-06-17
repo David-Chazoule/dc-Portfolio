@@ -7,10 +7,65 @@
   height: 100vh;
   background-color: rgba(0, 0, 255, 0.321);
   align-items: center;
+  justify-content: center;
+
   &.light {
     background-color: $themeLightPrimaire;
+    color: black;
   }
   &.dark {
     background-color: $themeDarkPrimaire;
+    color: white;
+  }
+
+  .img-about-container {
+    display: flex;
+    width: 600px;
+    margin-top: 4vh;
+    justify-content: center;
+    img {
+      width: 400px;
+      border-radius: 20px;
+    }
+
+    .presentation {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+
+      .competence-box {
+        display: flex;
+
+        .competence {
+          display: flex;
+          width: 100px;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          background-color: purple;
+          margin: 4px;
+          padding: 10px;
+          text-align: center;
+          border-radius: 20px;
+          .icon-competence {
+            width: 30px;
+            height: auto;
+          }
+
+          .iconLight {
+            color: black;
+          }
+          .iconDark {
+            color: white;
+          }
+        }
+      }
+
+      .about {
+        display: flex;
+        margin-top: 2vh;
+        font-size: 20px;
+      }
+    }
   }
 }
