@@ -14,16 +14,24 @@
   &.dark {
     background-color: $themeDarkPrimaire;
   }
+  .skills-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-  .skill-dev {
+  .skill-dev ,.skill-tools {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    
+    
+    
     width: 500px;
       border-radius: 20px;
       background-color: beige;
-    padding: 20px;
+    padding: 10px;
      margin-top: 4vh;
     .skills-grids {
       display: grid;
@@ -44,7 +52,7 @@
     }
 
     .skill-icon {
-      width: 60px;
+      width: 34px;
       height: auto;
     }
 
@@ -65,4 +73,5 @@
       }
     }
   }
+}
 }

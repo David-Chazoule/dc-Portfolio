@@ -12,9 +12,17 @@ import {
   FaReact,
   FaNodeJs,
   FaJs,
+  FaGithub,
+  FaJira,
+  FaDiscord,
 } from "react-icons/fa";
-
-import { SiTypescript, SiExpress } from "react-icons/si";
+import { VscVscodeInsiders } from "react-icons/vsc";
+import {
+  SiTypescript,
+  SiExpress,
+  SiPostman,
+  SiGooglemeet,
+} from "react-icons/si";
 
 /* Menu navBar */
 
@@ -146,6 +154,45 @@ export const MySkills: MySkillsType[] = [
     icon: SiExpress,
   },
   { name: "NODE", levelFr: "les bases", levelEn: "the basics", icon: FaNodeJs },
+];
+
+export const MyTools: MySkillsType[] = [
+  {
+    name: "GIT/GITHUB",
+    levelFr: "intermédiaire",
+    levelEn: "intermediate",
+    icon: FaGithub,
+  },
+  {
+    name: "VS CODE",
+    levelFr: "intermédiaire",
+    levelEn: "intermediate",
+    icon: VscVscodeInsiders,
+  },
+  {
+    name: "POSTMAN",
+    levelFr: "les bases",
+    levelEn: "the basics",
+    icon: SiPostman,
+  },
+  {
+    name: "JIRA",
+    levelFr: "les bases",
+    levelEn: "the basics",
+    icon: FaJira,
+  },
+  {
+    name: "DISCORD",
+    levelFr: "intermédiaire",
+    levelEn: "intermediate",
+    icon: FaDiscord,
+  },
+  {
+    name: "GOOGLE MEET",
+    levelFr: "intermédiaire",
+    levelEn: "intermediate",
+    icon: SiGooglemeet,
+  },
 ];
 
 /* contact data */

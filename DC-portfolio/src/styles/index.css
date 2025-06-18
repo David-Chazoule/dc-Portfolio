@@ -161,45 +161,51 @@
 .skills-container.dark {
   background-color: rgb(52, 51, 51);
 }
-.skills-container .skill-dev {
+.skills-container .skills-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skills-container .skills-box .skill-dev, .skills-container .skills-box .skill-tools {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   width: 500px;
   border-radius: 20px;
   background-color: beige;
-  padding: 20px;
+  padding: 10px;
   margin-top: 4vh;
 }
-.skills-container .skill-dev .skills-grids {
+.skills-container .skills-box .skill-dev .skills-grids, .skills-container .skills-box .skill-tools .skills-grids {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 1rem;
   justify-content: center;
   align-items: center;
 }
-.skills-container .skill-dev .skill-description {
+.skills-container .skills-box .skill-dev .skill-description, .skills-container .skills-box .skill-tools .skill-description {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
   border-radius: 8px;
 }
-.skills-container .skill-dev .skill-icon {
-  width: 60px;
+.skills-container .skills-box .skill-dev .skill-icon, .skills-container .skills-box .skill-tools .skill-icon {
+  width: 34px;
   height: auto;
 }
-.skills-container .skill-dev .skill-level {
+.skills-container .skills-box .skill-dev .skill-level, .skills-container .skills-box .skill-tools .skill-level {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.skills-container .skill-dev .skill-level h3 {
+.skills-container .skills-box .skill-dev .skill-level h3, .skills-container .skills-box .skill-tools .skill-level h3 {
   margin: 0;
   font-size: 1.2rem;
 }
-.skills-container .skill-dev .skill-level p {
+.skills-container .skills-box .skill-dev .skill-level p, .skills-container .skills-box .skill-tools .skill-level p {
   margin: 0;
   font-size: 0.9rem;
   opacity: 0.8;
