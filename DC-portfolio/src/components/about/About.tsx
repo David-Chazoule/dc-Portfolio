@@ -25,7 +25,7 @@ function About() {
                   theme === "light" ? "iconLight" : "iconDark"
                 }`}
               />
-              {language === "fr" ? aboutData.skillOneFr : aboutData.skillOneEn}
+             <h3>{language === "fr" ? aboutData.skillOneFr : aboutData.skillOneEn}</h3>
             </div>
             <div className="competence">
               <GiCompass
@@ -33,7 +33,7 @@ function About() {
                   theme === "light" ? "iconLight" : "iconDark"
                 }`}
               />
-              {language === "fr" ? aboutData.skillTwoFr : aboutData.skillTwoEn}
+              <h3>{language === "fr" ? aboutData.skillTwoFr : aboutData.skillTwoEn}</h3>
             </div>
             <div className="competence">
               <MdAutorenew
@@ -41,9 +41,9 @@ function About() {
                   theme === "light" ? "iconLight" : "iconDark"
                 }`}
               />
-              {language === "fr"
+              <h3>{language === "fr"
                 ? aboutData.skillThreeFr
-                : aboutData.skillThreeEn}
+                : aboutData.skillThreeEn}</h3> 
             </div>
           </div>
           <div className="about">

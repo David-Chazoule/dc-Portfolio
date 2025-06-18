@@ -21,12 +21,12 @@ function App() {
         {" "}
         <About />
       </div>
+      <div id="skills">
+        <Skills />
+      </div>
       <div id="courses">
         {" "}
         <Courses />
-      </div>
-      <div id="skills">
-        <Skills />
       </div>
       <div id="projects">
         {" "}

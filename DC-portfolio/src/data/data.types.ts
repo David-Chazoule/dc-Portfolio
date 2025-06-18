@@ -23,3 +23,10 @@ export interface navbarType {
   target: string;
   icon: IconType;
 }
+
+export interface MySkillsType {
+  name: string;
+  levelFr: string;
+  levelEn: string;
+  icon: IconType;
+}

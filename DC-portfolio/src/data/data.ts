@@ -1,4 +1,4 @@
-import type { AboutDataType, navbarType } from "./data.types";
+import type { AboutDataType, navbarType, MySkillsType } from "./data.types";
 import {
   FaHome,
   FaUser,
@@ -6,7 +6,15 @@ import {
   FaCode,
   FaProjectDiagram,
   FaEnvelope,
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaReact,
+  FaNodeJs,
+  FaJs,
 } from "react-icons/fa";
+
+import { SiTypescript, SiExpress } from "react-icons/si";
 
 /* Menu navBar */
 
@@ -92,6 +100,52 @@ export const skillsTitle = {
   titleFr: "COMPETENCES",
   titleEn: "SKILLS",
 };
+
+export const MySkills: MySkillsType[] = [
+  {
+    name: "HTML",
+    levelFr: "intermédiaire",
+    levelEn: "intermediate",
+    icon: FaHtml5,
+  },
+  {
+    name: "CSS",
+    levelFr: "intermédiaire",
+    levelEn: "intermediate",
+    icon: FaCss3Alt,
+  },
+  {
+    name: "SASS",
+    levelFr: "intermédiaire",
+    levelEn: "intermediate",
+    icon: FaSass,
+  },
+  {
+    name: "JAVASCRIPT",
+    levelFr: "intermédiaire",
+    levelEn: "intermediate",
+    icon: FaJs,
+  },
+  {
+    name: "TYPESCRIPT",
+    levelFr: "intermédiaire",
+    levelEn: "intermediate",
+    icon: SiTypescript,
+  },
+  {
+    name: "REACT",
+    levelFr: "intermédiaire",
+    levelEn: "intermediate",
+    icon: FaReact,
+  },
+  {
+    name: "EXPRESS",
+    levelFr: "les bases",
+    levelEn: "the basics",
+    icon: SiExpress,
+  },
+  { name: "NODE", levelFr: "les bases", levelEn: "the basics", icon: FaNodeJs },
+];
 
 /* contact data */
 
