@@ -33,19 +33,20 @@ export const navbar: navbarType[] = [
     target: "about",
     icon: FaUser,
   },
-  {
-    id: "courses",
-    menuFr: "PARCOURS",
-    menuEn: "COURSES",
-    target: "courses",
-    icon: FaFile,
-  },
+
   {
     id: "skills",
     menuFr: "COMPETENCES",
     menuEn: "SKILLS",
     target: "skills",
     icon: FaProjectDiagram,
+  },
+  {
+    id: "courses",
+    menuFr: "PARCOURS",
+    menuEn: "COURSES",
+    target: "courses",
+    icon: FaFile,
   },
   {
     id: "projects",

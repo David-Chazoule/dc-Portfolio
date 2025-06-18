@@ -14,19 +14,27 @@ function Skills() {
   const { language } = useContext(LanguageContext);
   return (
     <div className={`skills-container ${theme}`}>
-      <h3>Mes softskills</h3>
-      <h1>Mes compétences</h1>
+      <h1>{language === "fr" ? "Mes compétences" : "My skills"}</h1>
       <div className="skill-dev">
-        {MySkills.map((item) => {
-          const IconComponent = item.icon;
-          return (
-            <div>
-              <IconComponent />
-              <h3>{item.name}</h3>
-              <p>{item.levelFr}</p>
-            </div>
-          );
-        })}
+        <h2>Développement web</h2>
+        <div className="skills-grids">
+          {MySkills.map((item, index) => {
+            const IconComponent = item.icon;
+            return (
+              <div className="skill-description" key={index}>
+                <IconComponent
+                  className={`skill-icon  ${
+                    theme === "light" ? "iconLight" : "iconDark"
+                  }`}
+                />
+                <div className="skill-level">
+                  <h3>{item.name}</h3>
+                  <p>{language === "fr" ? item.levelFr : item.levelEn}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
