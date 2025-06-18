@@ -5,9 +5,6 @@ export interface AboutDataType {
   titleEn: string;
   aboutTxtFr: string;
   aboutTxtEn: string;
-  skillTitleFr: string;
-  skillTitleEn: string;
-  skillImg: string[];
   skillOneFr: string;
   skillOneEn: string;
   skillTwoFr: string;

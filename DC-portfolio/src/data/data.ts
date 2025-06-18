@@ -92,9 +92,6 @@ export const aboutData: AboutDataType = {
     "Après de nombreuses années d'exercice dans le secteur de la vente, j’ai pris la décision d’effectuer une reconversion dans le domaine du développement web. J’ai pour cela intégré la formation de la Wild Code School de Mars 2021 à Aout 2021 en développement web et mobile (ReactJS / NodeJS) J'ai obtenu mon titre professionnel développeur web et d'application mobile en Octobre 2022.",
   aboutTxtEn:
     "After many years of working in the sales sector, I decided to retrain in the field of web development. To do this, I joined the Wild Code School training from March 2021 to August 2021 in web and mobile development (ReactJS / NodeJS). I obtained my professional title as web and mobile application developer in October 2022.",
-  skillTitleFr: "Langages et outils que j'utilise :",
-  skillTitleEn: " Languages and tools I use:",
-  skillImg: ["HTML", "CSS", "JS", "SASS", "REACT", "NODE", "GITHUB"],
   skillOneFr: "Créativité",
   skillOneEn: "Creativity",
   skillTwoFr: "Adaptation",
@@ -104,11 +101,6 @@ export const aboutData: AboutDataType = {
 };
 
 /* skills data */
-
-export const skillsTitle = {
-  titleFr: "COMPETENCES",
-  titleEn: "SKILLS",
-};
 
 export const MySkills: MySkillsType[] = [
   {
