@@ -1,5 +1,5 @@
 type Project = {
-   id:number,
+  id: number;
   img: string;
   titleFr: string;
   titleEn: string;
@@ -20,9 +20,9 @@ type Props = {
 function ProjectCard({ project, onClick }: Props) {
   return (
     <div className="card-container">
-      <img src={`/img/${project.img}.gif`} alt={project.img+`image`} />
+      <img src={`/img/${project.img}.gif`} alt={project.img + `image`} />
       <div className="detail-card">
-        <h2>{project.titleFr}</h2>
+        <p>{project.titleFr}</p>
 
         <h3 onClick={() => onClick(project)}>Details</h3>
       </div>

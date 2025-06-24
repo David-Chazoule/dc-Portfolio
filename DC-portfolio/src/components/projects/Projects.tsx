@@ -4,17 +4,18 @@ import { LanguageContext } from "../../context/LanguageContext";
 import ProjectCard from "../projectCard/ProjectCard";
 import { project } from "../../data/data";
 import type { projectCardType } from "../../data/data.types";
+import ProjectModal from "../projectModal/ProjectModal";
 
 function Projects() {
   const { theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
   const [selectedProject, setSelectedProject] =
     useState<projectCardType | null>(null);
-
+  console.log("project list", project);
   return (
     <div className={`projects-container ${theme}`}>
-      <h3>Projet</h3>
-      <h1>Mon Portfolio</h1>
+      <h3>{language == "fr" ? "Projets" : "Projects"}</h3>
+      <h1>{language == "fr" ? "Mon Portfolio" : "My Portfolio"}</h1>
       <div className="projects-wrap">
         {project.map((project) => (
           <ProjectCard
@@ -24,6 +25,10 @@ function Projects() {
           />
         ))}
       </div>
+      <ProjectModal
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
     </div>
   );
 }
