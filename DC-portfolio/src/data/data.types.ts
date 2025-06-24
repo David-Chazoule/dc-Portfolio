@@ -27,3 +27,16 @@ export interface MySkillsType {
   levelEn: string;
   icon: IconType;
 }
+
+export interface projectCardType {
+  img: string;
+  titleFr: string;
+  titleEn: string;
+  descriptionFr: string;
+  descriptionEn: string;
+  github: boolean;
+  githubLink: string;
+  live: boolean;
+  liveLink: string;
+  tags: string[];
+}

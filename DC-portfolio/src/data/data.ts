@@ -1,4 +1,9 @@
-import type { AboutDataType, navbarType, MySkillsType } from "./data.types";
+import type {
+  AboutDataType,
+  navbarType,
+  MySkillsType,
+  projectCardType,
+} from "./data.types";
 import {
   FaHome,
   FaUser,
@@ -211,7 +216,7 @@ export const projectTitle = {
 
 /* project card data */
 
-export const project = [
+export const project: projectCardType[] = [
   {
     img: "listUp",
     titleFr: "List-up",
