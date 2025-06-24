@@ -7,71 +7,69 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-
+  transition: background-color 0.4s ease, color 0.4s ease;
   &.light {
     background-color: $themeLightPrimaire;
   }
   &.dark {
     background-color: $themeDarkPrimaire;
   }
-  .skills-box{
+  .skills-box {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
-  .skill-dev ,.skill-tools {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
-    
-    width: 500px;
-      border-radius: 20px;
-      background-color: beige;
-    padding: 10px;
-     margin-top: 4vh;
-    .skills-grids {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-      gap: 1rem;
-      justify-content: center;
-      align-items: center;
-      
-    }
-
-    .skill-description {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-
-      padding: 1rem;
-      border-radius: 8px;
-    }
-
-    .skill-icon {
-      width: 34px;
-      height: auto;
-    }
-
-    .skill-level {
+    .skill-dev,
+    .skill-tools {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
 
-      h3 {
-        margin: 0;
-        font-size: 1.2rem;
+      width: 500px;
+      border-radius: 20px;
+      background-color: beige;
+      padding: 10px;
+      margin-top: 4vh;
+      .skills-grids {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
       }
 
-      p {
-        margin: 0;
-        font-size: 0.9rem;
-        opacity: 0.8;
+      .skill-description {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        padding: 1rem;
+        border-radius: 8px;
+      }
+
+      .skill-icon {
+        width: 34px;
+        height: auto;
+      }
+
+      .skill-level {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          margin: 0;
+          font-size: 1.2rem;
+        }
+
+        p {
+          margin: 0;
+          font-size: 0.9rem;
+          opacity: 0.8;
+        }
       }
     }
   }
-}
 }

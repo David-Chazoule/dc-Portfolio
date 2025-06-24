@@ -6,8 +6,7 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: bisque;
-
+  transition: background-color 0.4s ease, color 0.4s ease;
   &.light {
     background-color: $themeLightPrimaire;
   }

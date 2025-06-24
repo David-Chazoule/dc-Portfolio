@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
   align-items: center;
   justify-content: center;
 }
@@ -64,9 +65,9 @@
   display: flex;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 255, 255, 0.412);
   align-items: center;
   justify-content: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .courses-container.light {
   background-color: violet;
@@ -112,7 +113,7 @@
   height: 6vh;
   align-items: center;
   justify-content: center;
-  background-color: blueviolet;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .header-container .header-box {
   display: flex;
@@ -142,7 +143,7 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 0, 0, 0.265);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .introduction-container.light {
   background-color: violet;
@@ -157,7 +158,7 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 166, 0, 0.467);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .projects-container.light {
   background-color: violet;
@@ -173,6 +174,7 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .skills-container.light {
   background-color: violet;
@@ -187,7 +189,8 @@
   justify-content: center;
   flex-direction: column;
 }
-.skills-container .skills-box .skill-dev, .skills-container .skills-box .skill-tools {
+.skills-container .skills-box .skill-dev,
+.skills-container .skills-box .skill-tools {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,34 +200,40 @@
   padding: 10px;
   margin-top: 4vh;
 }
-.skills-container .skills-box .skill-dev .skills-grids, .skills-container .skills-box .skill-tools .skills-grids {
+.skills-container .skills-box .skill-dev .skills-grids,
+.skills-container .skills-box .skill-tools .skills-grids {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 1rem;
   justify-content: center;
   align-items: center;
 }
-.skills-container .skills-box .skill-dev .skill-description, .skills-container .skills-box .skill-tools .skill-description {
+.skills-container .skills-box .skill-dev .skill-description,
+.skills-container .skills-box .skill-tools .skill-description {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
   border-radius: 8px;
 }
-.skills-container .skills-box .skill-dev .skill-icon, .skills-container .skills-box .skill-tools .skill-icon {
+.skills-container .skills-box .skill-dev .skill-icon,
+.skills-container .skills-box .skill-tools .skill-icon {
   width: 34px;
   height: auto;
 }
-.skills-container .skills-box .skill-dev .skill-level, .skills-container .skills-box .skill-tools .skill-level {
+.skills-container .skills-box .skill-dev .skill-level,
+.skills-container .skills-box .skill-tools .skill-level {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.skills-container .skills-box .skill-dev .skill-level h3, .skills-container .skills-box .skill-tools .skill-level h3 {
+.skills-container .skills-box .skill-dev .skill-level h3,
+.skills-container .skills-box .skill-tools .skill-level h3 {
   margin: 0;
   font-size: 1.2rem;
 }
-.skills-container .skills-box .skill-dev .skill-level p, .skills-container .skills-box .skill-tools .skill-level p {
+.skills-container .skills-box .skill-dev .skill-level p,
+.skills-container .skills-box .skill-tools .skill-level p {
   margin: 0;
   font-size: 0.9rem;
   opacity: 0.8;
@@ -236,7 +245,7 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: bisque;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .contact-container.light {
   background-color: violet;
@@ -294,6 +303,7 @@
   padding: 20px;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .navbar-container .list-nav.light {
   background-color: rgba(63, 7, 63, 0.108);
