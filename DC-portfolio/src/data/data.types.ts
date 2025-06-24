@@ -29,6 +29,7 @@ export interface MySkillsType {
 }
 
 export interface projectCardType {
+  id: number;
   img: string;
   titleFr: string;
   titleEn: string;
@@ -36,6 +37,8 @@ export interface projectCardType {
   descriptionEn: string;
   github: boolean;
   githubLink: string;
+  githubLinkTwo?: string;
+  git?: boolean;
   live: boolean;
   liveLink: string;
   tags: string[];

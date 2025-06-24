@@ -218,6 +218,7 @@ export const projectTitle = {
 
 export const project: projectCardType[] = [
   {
+    id:1,
     img: "listUp",
     titleFr: "List-up",
     titleEn: "List-up",
@@ -233,6 +234,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:2,
     img: "crowdfunding",
     titleFr: "Page de financement participatif",
     titleEn: "Crowdfunding product page",
@@ -248,6 +250,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:3,
     img: "ProductList",
     titleFr: "Liste des produits avec panier",
     titleEn: "Space Tourism",
@@ -263,6 +266,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:4,
     img: "SpaceTourism",
     titleFr: "Tourisme spacial",
     titleEn: "Space Tourism",
@@ -277,6 +281,7 @@ export const project: projectCardType[] = [
     tags: ["REACT", "TS", "SASS"],
   },
   {
+    id:5,
     img: "Todo",
     titleFr: "Todo App",
     titleEn: "Todo App",
@@ -292,6 +297,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:6,
     img: "horae",
     titleFr: "Horae",
     titleEn: "Horae",
@@ -306,6 +312,7 @@ export const project: projectCardType[] = [
     tags: ["REACT", "TS", "JS", "SASS", "NODE"],
   },
   {
+    id:7,
     img: "portefolio",
     titleFr: "Portfolio",
     titleEn: "Portfolio",
@@ -321,6 +328,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:8,
     img: "MesureBody",
     titleFr: "Mesure Body",
     titleEn: "Mesure Body",
@@ -336,6 +344,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:9,
     img: "filterJob",
     titleFr: "Job listing",
     titleEn: "Job listing",
@@ -351,6 +360,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:10,
     img: "mortgage_1",
     titleFr: "Calculateur de remboursement",
     titleEn: "Montgage repayment calculator",
@@ -368,6 +378,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:11,
     img: "ageCalculator_1",
     titleFr: "Calculateur d'âge",
     titleEn: "Age calculator",
@@ -383,6 +394,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:12,
     img: "tip_1",
     titleFr: "Calculateur de pourboire",
     titleEn: "Tip calculator",
@@ -397,6 +409,7 @@ export const project: projectCardType[] = [
     tags: ["REACT", "JS", "SASS"],
   },
   {
+    id:13,
     img: "card_1",
     titleFr: "Carte interactive",
     titleEn: "Interactive card detail",
@@ -412,6 +425,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:14,
     img: "password_1",
     titleFr: "Générateur de mot de passe",
     titleEn: "Password Generator",
@@ -427,6 +441,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:15,
     img: "technologeek",
     titleFr: "Technologeek",
     titleEn: "Technologeek",
@@ -444,6 +459,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:16,
     img: "NumeroVert",
     titleFr: "Numero Vert",
     titleEn: "Green number",
@@ -458,6 +474,7 @@ export const project: projectCardType[] = [
     tags: ["REACT", "JS", "CSS", "NODE"],
   },
   {
+    id:17,
     img: "centrex",
     titleFr: "Téléphonie centrex",
     titleEn: "Centrex telephony",
@@ -472,6 +489,7 @@ export const project: projectCardType[] = [
     tags: ["REACT", "JS", "CSS", "NODE"],
   },
   {
+    id:18,
     img: "vert",
     titleFr: "Standard virtuel",
     titleEn: "Virtual switchboard",
@@ -487,6 +505,7 @@ export const project: projectCardType[] = [
   },
 
   {
+    id:19,
     img: "MarsWebSite",
     titleFr: "Mars Ma Zon",
     titleEn: "Mars Ma Zon",
