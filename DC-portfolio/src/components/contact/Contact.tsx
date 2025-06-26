@@ -8,7 +8,7 @@ function Contact() {
   const { theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!form.current) return;
     emailjs
@@ -26,7 +26,7 @@ function Contact() {
           console.log(error.text);
         }
       );
-    e.target.reset();
+    form.current.reset();
   };
 
   return (
