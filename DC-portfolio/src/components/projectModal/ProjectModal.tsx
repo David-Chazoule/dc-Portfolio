@@ -1,4 +1,7 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
+
+import type { IconType } from "react-icons";
 
 type Project = {
   id: number;
@@ -9,9 +12,11 @@ type Project = {
   descriptionEn: string;
   github: boolean;
   githubLink: string;
+  githubLinkTwo?: string;
+  git?: boolean;
   live: boolean;
   liveLink: string;
-  tags: string[];
+  icon: IconType[];
 };
 
 type Props = {
@@ -21,6 +26,7 @@ type Props = {
 
 function ProjectModal({ project, onClose }: Props) {
   const [closing, setClosing] = useState(false);
+  const { theme } = useContext(ThemeContext);
 
   if (!project) return null;
 
@@ -40,11 +46,49 @@ function ProjectModal({ project, onClose }: Props) {
         <div className="modal-detail">
           <h2>{project.titleFr}</h2>
           <p>{project.descriptionFr}</p>
-          <div className="link-container">
-            <button>Github</button>
-            <button>Live</button>
+
+          <div className="techno-container">
+            <p>Techno utilisées</p>
+            <div className="techno-icons">
+              {project.icon.map((IconComponent, index) => {
+                return <IconComponent key={index} className="icon-techno" />;
+              })}
+            </div>
           </div>
-          <button onClick={handleClose}>Fermer</button>
+
+          <div className="link-container">
+            {project.github === true ? (
+              <a href={project.githubLink}>
+                <button className={theme === "light" ? "btnLight" : "btnDark"}>
+                  GitHub
+                </button>
+              </a>
+            ) : (
+              ""
+            )}
+
+            {project.git === true ? (
+              <a href={project.githubLinkTwo}>
+                <button className={theme === "light" ? "btnLight" : "btnDark"}>
+                  GitHub back-end
+                </button>
+              </a>
+            ) : (
+              ""
+            )}
+            {project.live === true ? (
+              <a href={project.liveLink}>
+                <button className={theme === "light" ? "btnLight" : "btnDark"}>
+                  Live
+                </button>
+              </a>
+            ) : (
+              ""
+            )}
+          </div>
+          <div className="footer-modal">
+            <button onClick={handleClose}>Fermer</button>
+          </div>
         </div>
       </div>
     </div>

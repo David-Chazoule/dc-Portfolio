@@ -53,31 +53,68 @@
     }
 
     .modal-detail {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    .link-container{
       display: flex;
-      width:100%;
-      align-items: center;
-      justify-content: space-around;
-      margin: 10px;
-    }
-     
+      flex-direction: column;
+      width: 100%;
 
+      h2 {
+        margin: 6px 0;
+      }
 
-      button {
-        align-self: flex-end;
-        padding: 8px 16px;
-        background-color: #222;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
+      .techno-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        .techno-icons {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          margin: 10px;
 
-        &:hover {
-          background-color: #444;
+          .icon-techno {
+            width: 50px;
+            height: auto;
+            margin: 6px;
+          }
+        }
+      }
+
+      .link-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px;
+        a {
+          button {
+            background-color: black;
+            color: white;
+            align-self: flex-end;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+          }
+        }
+      }
+
+      .footer-modal {
+        button {
+          align-self: flex-end;
+          padding: 8px 16px;
+          background-color: #222;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #444;
+          }
         }
       }
     }

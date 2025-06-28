@@ -41,5 +41,5 @@ export interface projectCardType {
   git?: boolean;
   live: boolean;
   liveLink: string;
-  tags: string[];
+  icon: IconType[];
 }

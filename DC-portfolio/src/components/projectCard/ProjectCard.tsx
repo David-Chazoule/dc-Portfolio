@@ -9,7 +9,7 @@ type Project = {
   githubLink: string;
   live: boolean;
   liveLink: string;
-  tags: string[];
+  icon: IconType[];
 };
 
 type Props = {

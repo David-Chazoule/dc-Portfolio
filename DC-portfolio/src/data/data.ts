@@ -27,6 +27,8 @@ import {
   SiExpress,
   SiPostman,
   SiGooglemeet,
+  SiNextdotjs,
+  SiPrisma,
 } from "react-icons/si";
 
 /* Menu navBar */
@@ -218,7 +220,7 @@ export const projectTitle = {
 
 export const project: projectCardType[] = [
   {
-    id:1,
+    id: 1,
     img: "listUp",
     titleFr: "List-up",
     titleEn: "List-up",
@@ -230,11 +232,11 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/listup",
     live: false,
     liveLink: "https://david-chazoule.github.io/Crowdfunding-product/",
-    tags: ["NEXT", "TS", "PRISMA", "SASS"],
+    icon: [SiNextdotjs, SiTypescript, SiPrisma, FaSass],
   },
 
   {
-    id:2,
+    id: 2,
     img: "crowdfunding",
     titleFr: "Page de financement participatif",
     titleEn: "Crowdfunding product page",
@@ -246,11 +248,11 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/Crowdfunding-product",
     live: true,
     liveLink: "https://david-chazoule.github.io/Crowdfunding-product/",
-    tags: ["REACT", "TS", "SASS"],
+    icon: [FaReact, SiTypescript, FaSass],
   },
 
   {
-    id:3,
+    id: 3,
     img: "ProductList",
     titleFr: "Liste des produits avec panier",
     titleEn: "Space Tourism",
@@ -262,11 +264,11 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/Product-list",
     live: true,
     liveLink: "https://david-chazoule.github.io/Product-list/",
-    tags: ["REACT", "TS", "SASS"],
+    icon: [FaReact, SiTypescript, FaSass],
   },
 
   {
-    id:4,
+    id: 4,
     img: "SpaceTourism",
     titleFr: "Tourisme spacial",
     titleEn: "Space Tourism",
@@ -278,10 +280,10 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/Space-Tourism",
     live: true,
     liveLink: "https://david-chazoule.github.io/Space-Tourism/#/Home",
-    tags: ["REACT", "TS", "SASS"],
+    icon: [FaReact, SiTypescript, FaSass],
   },
   {
-    id:5,
+    id: 5,
     img: "Todo",
     titleFr: "Todo App",
     titleEn: "Todo App",
@@ -293,11 +295,11 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/todo-app",
     live: true,
     liveLink: "https://david-chazoule.github.io/todo-app/",
-    tags: ["REACT", "JS", "SASS"],
+    icon: [FaReact, FaJs, FaSass],
   },
 
   {
-    id:6,
+    id: 6,
     img: "horae",
     titleFr: "Horae",
     titleEn: "Horae",
@@ -309,10 +311,10 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/Horae",
     live: true,
     liveLink: "https://david-chazoule.github.io/Horae/",
-    tags: ["REACT", "TS", "JS", "SASS", "NODE"],
+    icon: [FaReact, SiTypescript, FaSass, FaNodeJs],
   },
   {
-    id:7,
+    id: 7,
     img: "portefolio",
     titleFr: "Portfolio",
     titleEn: "Portfolio",
@@ -324,11 +326,11 @@ export const project: projectCardType[] = [
     githubLink: "",
     live: false,
     liveLink: "",
-    tags: ["REACT", "JS", "SASS", "NODE"],
+    icon: [FaReact, FaJs, FaSass, FaNodeJs],
   },
 
   {
-    id:8,
+    id: 8,
     img: "MesureBody",
     titleFr: "Mesure Body",
     titleEn: "Mesure Body",
@@ -340,11 +342,11 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/BodyMeasure",
     live: true,
     liveLink: "https://david-chazoule.github.io/BodyMeasure/",
-    tags: ["REACT", "JS", "SASS"],
+    icon: [FaReact, FaJs, FaSass],
   },
 
   {
-    id:9,
+    id: 9,
     img: "filterJob",
     titleFr: "Job listing",
     titleEn: "Job listing",
@@ -356,11 +358,11 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/job-listings",
     live: true,
     liveLink: "https://david-chazoule.github.io/job-listings/",
-    tags: ["REACT", "JS", "SASS"],
+    icon: [FaReact, FaJs, FaSass],
   },
 
   {
-    id:10,
+    id: 10,
     img: "mortgage_1",
     titleFr: "Calculateur de remboursement",
     titleEn: "Montgage repayment calculator",
@@ -374,11 +376,11 @@ export const project: projectCardType[] = [
     live: true,
     liveLink:
       "https://david-chazoule.github.io/Montgage-repayment-calculator-/",
-    tags: ["REACT", "JS", "SASS"],
+    icon: [FaReact, FaJs, FaSass],
   },
 
   {
-    id:11,
+    id: 11,
     img: "ageCalculator_1",
     titleFr: "Calculateur d'âge",
     titleEn: "Age calculator",
@@ -390,11 +392,11 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/age-calculator",
     live: true,
     liveLink: "https://david-chazoule.github.io/age-calculator/",
-    tags: ["REACT", "JS", "SASS"],
+    icon: [FaReact, FaJs, FaSass],
   },
 
   {
-    id:12,
+    id: 12,
     img: "tip_1",
     titleFr: "Calculateur de pourboire",
     titleEn: "Tip calculator",
@@ -406,10 +408,10 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/tip-calculator",
     live: true,
     liveLink: "https://david-chazoule.github.io/tip-calculator/",
-    tags: ["REACT", "JS", "SASS"],
+    icon: [FaReact, FaJs, FaSass],
   },
   {
-    id:13,
+    id: 13,
     img: "card_1",
     titleFr: "Carte interactive",
     titleEn: "Interactive card detail",
@@ -421,11 +423,11 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/interactive-card-detail",
     live: true,
     liveLink: "https://david-chazoule.github.io/interactive-card-detail/",
-    tags: ["REACT", "JS", "SASS"],
+    icon: [FaReact, FaJs, FaSass],
   },
 
   {
-    id:14,
+    id: 14,
     img: "password_1",
     titleFr: "Générateur de mot de passe",
     titleEn: "Password Generator",
@@ -437,11 +439,11 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule/PasswordGenerator",
     live: true,
     liveLink: "https://david-chazoule.github.io/PasswordGenerator/",
-    tags: ["REACT", "JS", "SASS"],
+    icon: [FaReact, FaJs, FaSass],
   },
 
   {
-    id:15,
+    id: 15,
     img: "technologeek",
     titleFr: "Technologeek",
     titleEn: "Technologeek",
@@ -455,11 +457,11 @@ export const project: projectCardType[] = [
     git: true,
     live: false,
     liveLink: "",
-    tags: ["REACT", "JS", "SASS", "NODE"],
+    icon: [FaReact, FaJs, FaSass, FaNodeJs],
   },
 
   {
-    id:16,
+    id: 16,
     img: "NumeroVert",
     titleFr: "Numero Vert",
     titleEn: "Green number",
@@ -471,10 +473,10 @@ export const project: projectCardType[] = [
     githubLink: "",
     live: true,
     liveLink: "https://numerovert.standardenligne.fr/",
-    tags: ["REACT", "JS", "CSS", "NODE"],
+    icon: [FaReact, FaJs, FaCss3Alt, FaNodeJs],
   },
   {
-    id:17,
+    id: 17,
     img: "centrex",
     titleFr: "Téléphonie centrex",
     titleEn: "Centrex telephony",
@@ -486,10 +488,10 @@ export const project: projectCardType[] = [
     githubLink: "",
     live: true,
     liveLink: "https://telephonieip.standardenligne.fr/",
-    tags: ["REACT", "JS", "CSS", "NODE"],
+    icon: [FaReact, FaJs, FaCss3Alt, FaNodeJs],
   },
   {
-    id:18,
+    id: 18,
     img: "vert",
     titleFr: "Standard virtuel",
     titleEn: "Virtual switchboard",
@@ -501,11 +503,11 @@ export const project: projectCardType[] = [
     githubLink: "https://github.com/David-Chazoule",
     live: true,
     liveLink: "https://commande.standardenligne.fr/",
-    tags: ["REACT", "JS", "CSS", "NODE"],
+    icon: [FaReact, FaJs, FaCss3Alt, FaNodeJs],
   },
 
   {
-    id:19,
+    id: 19,
     img: "MarsWebSite",
     titleFr: "Mars Ma Zon",
     titleEn: "Mars Ma Zon",
@@ -517,6 +519,6 @@ export const project: projectCardType[] = [
     githubLink: "",
     live: true,
     liveLink: "https://pelegrand.github.io/earth_at_hack/",
-    tags: ["REACT", "JS", "CSS", "NODE"],
+    icon: [FaReact, FaJs, FaCss3Alt, FaNodeJs],
   },
 ];

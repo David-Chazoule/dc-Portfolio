@@ -247,6 +247,29 @@
   flex-direction: column;
   width: 100%;
 }
+.modal-container .modal-content .modal-detail h2 {
+  margin: 6px 0;
+}
+.modal-container .modal-content .modal-detail .techno-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.modal-container .modal-content .modal-detail .techno-container .techno-icons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.modal-container .modal-content .modal-detail .techno-container .techno-icons .icon-techno {
+  width: 50px;
+  height: auto;
+  margin: 6px;
+}
 .modal-container .modal-content .modal-detail .link-container {
   display: flex;
   width: 100%;
@@ -254,7 +277,16 @@
   justify-content: space-around;
   margin: 10px;
 }
-.modal-container .modal-content .modal-detail button {
+.modal-container .modal-content .modal-detail .link-container a button {
+  background-color: black;
+  color: white;
+  align-self: flex-end;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+.modal-container .modal-content .modal-detail .footer-modal button {
   align-self: flex-end;
   padding: 8px 16px;
   background-color: #222;
@@ -263,7 +295,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.modal-container .modal-content .modal-detail button:hover {
+.modal-container .modal-content .modal-detail .footer-modal button:hover {
   background-color: #444;
 }
 .modal-container .fade-in {
