@@ -40,6 +40,10 @@ function ProjectModal({ project, onClose }: Props) {
         <div className="modal-detail">
           <h2>{project.titleFr}</h2>
           <p>{project.descriptionFr}</p>
+          <div className="link-container">
+            <button>Github</button>
+            <button>Live</button>
+          </div>
           <button onClick={handleClose}>Fermer</button>
         </div>
       </div>

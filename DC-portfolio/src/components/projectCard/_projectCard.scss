@@ -1,21 +1,41 @@
-.card-container {
+.card-container{
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
-  width: 420px;
-  background-color: white;
-  margin: 30px;
+  width: 380px;
+ background-color: white;
+ margin: 10px;
+ padding:  10px 0 ;
+ border-radius: 20px;
 
-  img {
-    width: 98%;
+  img{
+    width: 90%;
     height: 180px;
+    border-radius: 20px;
+    
+    
   }
 
-  .detail-card {
+  .detail-card{
     display: flex;
+    width: 90%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 14px;
+  text-align: start;
+    .title-card{
+      font-size: 22px;
+      font-weight: 700;
+      width: 100%;
+    }
+
+    p{
+      font-size: 14px;
+      width: 100%;
+      margin: 10px 0 20px 0;
+      cursor: pointer;
+    }
   }
 }

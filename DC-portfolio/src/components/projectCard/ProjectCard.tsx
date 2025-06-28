@@ -22,9 +22,9 @@ function ProjectCard({ project, onClick }: Props) {
     <div className="card-container">
       <img src={`/img/${project.img}.gif`} alt={project.img + `image`} />
       <div className="detail-card">
-        <p>{project.titleFr}</p>
+        <p className="title-card">{project.titleFr}</p>
 
-        <h3 onClick={() => onClick(project)}>Details</h3>
+        <p onClick={() => onClick(project)}>plus d'informations</p>
       </div>
     </div>
   );

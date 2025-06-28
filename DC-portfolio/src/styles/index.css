@@ -107,6 +107,7 @@
 .header-container {
   display: flex;
   position: fixed;
+  z-index: 1000;
   top: 0; /* Important pour fixed */
   left: 0;
   width: 100%;
@@ -157,19 +158,36 @@
   width: 100%;
   flex-direction: column;
   align-items: center;
-  width: 420px;
+  width: 380px;
   background-color: white;
-  margin: 30px;
+  margin: 10px;
+  padding: 10px 0;
+  border-radius: 20px;
 }
 .card-container img {
-  width: 98%;
+  width: 90%;
   height: 180px;
+  border-radius: 20px;
 }
 .card-container .detail-card {
   display: flex;
+  width: 90%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: 14px;
+  text-align: start;
+}
+.card-container .detail-card .title-card {
+  font-size: 22px;
+  font-weight: 700;
+  width: 100%;
+}
+.card-container .detail-card p {
+  font-size: 14px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
@@ -196,7 +214,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 900;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
@@ -224,7 +242,19 @@
   height: auto;
   border-radius: 6px;
 }
-.modal-container .modal-content button {
+.modal-container .modal-content .modal-detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.modal-container .modal-content .modal-detail .link-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+.modal-container .modal-content .modal-detail button {
   align-self: flex-end;
   padding: 8px 16px;
   background-color: #222;
@@ -233,7 +263,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.modal-container .modal-content button:hover {
+.modal-container .modal-content .modal-detail button:hover {
   background-color: #444;
 }
 .modal-container .fade-in {
@@ -264,8 +294,8 @@
 }
 .projects-container .projects-wrap {
   display: flex;
-  width: 100%;
-  margin: 40px 0;
+  width: 1200px;
+  margin: 30px 0;
   flex-wrap: wrap;
   justify-content: center;
 }
