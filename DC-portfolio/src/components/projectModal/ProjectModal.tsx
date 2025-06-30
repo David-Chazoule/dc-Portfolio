@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-
+import { LanguageContext } from "../../context/LanguageContext";
 import type { IconType } from "react-icons";
 
 type Project = {
@@ -27,6 +27,7 @@ type Props = {
 function ProjectModal({ project, onClose }: Props) {
   const [closing, setClosing] = useState(false);
   const { theme } = useContext(ThemeContext);
+  const { language } = useContext(LanguageContext);
 
   if (!project) return null;
 
@@ -44,11 +45,13 @@ function ProjectModal({ project, onClose }: Props) {
         <img src={`/img/${project.img}.gif`} alt={project.img + `image`} />
 
         <div className="modal-detail">
-          <h2>{project.titleFr}</h2>
-          <p>{project.descriptionFr}</p>
+          <h2>{language === "fr" ? project.titleFr : project.titleEn}</h2>
+          <p>
+            {language === "fr" ? project.descriptionFr : project.descriptionEn}
+          </p>
 
           <div className="techno-container">
-            <p>Techno utilisées</p>
+            <p>{language === "fr" ? "Techno utilisées" : "Techno used"}</p>
             <div className="techno-icons">
               {project.icon.map((IconComponent, index) => {
                 return <IconComponent key={index} className="icon-techno" />;
@@ -87,7 +90,9 @@ function ProjectModal({ project, onClose }: Props) {
             )}
           </div>
           <div className="footer-modal">
-            <button onClick={handleClose}>Fermer</button>
+            <button onClick={handleClose}>
+              {language === "fr" ? "Fermer" : "close"}
+            </button>
           </div>
         </div>
       </div>
