@@ -13,7 +13,7 @@ function About() {
 
   return (
     <div className={`about-container ${theme}`}>
-      <h3>Présentation</h3>
+      <h3>{language === "fr" ?'Présentation':'Presentation'}</h3>
       <h1>{language === "fr" ? aboutData.titleFr : aboutData.titleEn}</h1>
       <div className="img-about-container">
         <img src={photo} alt="photo-moi" />

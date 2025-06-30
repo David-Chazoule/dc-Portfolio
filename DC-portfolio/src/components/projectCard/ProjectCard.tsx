@@ -1,3 +1,8 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
+import { LanguageContext } from "../../context/LanguageContext";
+import type { IconType } from "react-icons";
+
 type Project = {
   id: number;
   img: string;
@@ -18,13 +23,20 @@ type Props = {
 };
 
 function ProjectCard({ project, onClick }: Props) {
+  const { theme } = useContext(ThemeContext);
+  const { language } = useContext(LanguageContext);
+
   return (
     <div className="card-container">
       <img src={`/img/${project.img}.gif`} alt={project.img + `image`} />
       <div className="detail-card">
-        <p className="title-card">{project.titleFr}</p>
+        <p className="title-card">
+          {language === "fr" ? project.titleFr : project.titleEn}
+        </p>
 
-        <p onClick={() => onClick(project)}>plus d'informations</p>
+        <p onClick={() => onClick(project)}>
+          {language === "fr" ? "Plus d'informations" : "More information"}
+        </p>
       </div>
     </div>
   );

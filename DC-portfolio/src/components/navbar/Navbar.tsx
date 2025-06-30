@@ -12,6 +12,7 @@ declare module "react-icons" {
 function Navbar() {
   const { theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
+  
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
     if (element) {

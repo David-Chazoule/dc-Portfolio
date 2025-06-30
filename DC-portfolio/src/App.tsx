@@ -11,34 +11,34 @@ import Skills from "./components/skills/Skills";
 
 function App() {
   return (
-    <div className="app">
+    <section className="app">
       <Header />
-      <div id="home">
+      <section id="home">
         {" "}
         <Introduction />
-      </div>
-      <div id="about">
+      </section>
+      <section id="about">
         {" "}
         <About />
-      </div>
-      <div id="skills">
+      </section>
+      <section id="skills">
         <Skills />
-      </div>
-      <div id="courses">
+      </section>
+      <section id="courses">
         {" "}
         <Courses />
-      </div>
-      <div id="projects">
+      </section>
+      <section id="projects">
         {" "}
         <Projects />
-      </div>
-      <div id="contact">
+      </section>
+      <section id="contact">
         {" "}
         <Contact />
-      </div>
+      </section>
       <Navbar />
       <Footer />
-    </div>
+    </section>
   );
 }
 
