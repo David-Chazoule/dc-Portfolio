@@ -31,6 +31,9 @@
 
     button {
       cursor: pointer;
+      padding: 10px;
+      border-radius: 10px;
+      width: 160px;
     }
   }
 
@@ -41,11 +44,26 @@
     .left-box {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       margin-right: 20px;
-      .icon-social {
-        width: 40px;
-        height: auto;
-        margin-top: 10px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        .icon-social {
+          width: 30px;
+          height: auto;
+          margin-top: 4px;
+          cursor: pointer;
+        }
+      }
+
+      .line {
+        width: 2px;
+        height: 50px;
+        margin-top: 4px;
+        background-color: black;
       }
     }
 

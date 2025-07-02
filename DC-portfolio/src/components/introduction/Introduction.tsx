@@ -17,17 +17,27 @@ function Introduction() {
   };
   return (
     <div className={`introduction-container ${theme}`}>
-      <h3>{language==='fr'? 'Hello, je suis':"Hello, i'am"}</h3>
+      <h3>{language === "fr" ? "Hello, je suis" : "Hello, i'am"}</h3>
       <h1>David</h1>
       <h3>Développeur web </h3>
       <div className="cv-about-container">
-        <button>Télécharger le cv</button>
-        <button onClick={() => scrollTo("about")}>A propos de moi</button>
+        <button>
+          {language === "fr" ? "Télécharger mon CV" : "download my CV"}
+        </button>
+        <button onClick={() => scrollTo("about")}>
+          {language === "fr" ? "A propos de moi" : "About me"}
+        </button>
       </div>
       <div className="container-img">
         <div className="left-box">
-          <FaLinkedin className="icon-social" />
-          <FaGithub className="icon-social" />
+          <a href="https://www.linkedin.com/in/david-chazoule/">
+            <FaLinkedin className="icon-social" />
+          </a>
+          <a href="https://github.com/David-Chazoule">
+            <FaGithub className="icon-social" />
+          </a>
+
+          <span className="line" />
         </div>
         <div className="middle-box">
           <img src={photo} alt="" />

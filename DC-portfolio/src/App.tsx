@@ -11,7 +11,7 @@ import Skills from "./components/skills/Skills";
 
 function App() {
   return (
-    <section className="app">
+    <div className="app">
       <Header />
       <section id="home">
         {" "}
@@ -38,7 +38,7 @@ function App() {
       </section>
       <Navbar />
       <Footer />
-    </section>
+    </div>
   );
 }
 

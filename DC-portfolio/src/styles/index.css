@@ -168,6 +168,9 @@
 }
 .introduction-container .cv-about-container button {
   cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  width: 160px;
 }
 .introduction-container .container-img {
   display: flex;
@@ -176,12 +179,25 @@
 .introduction-container .container-img .left-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-right: 20px;
 }
-.introduction-container .container-img .left-box .icon-social {
-  width: 40px;
+.introduction-container .container-img .left-box a {
+  text-decoration: none;
+  color: inherit;
+}
+.introduction-container .container-img .left-box a .icon-social {
+  width: 30px;
   height: auto;
-  margin-top: 10px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.introduction-container .container-img .left-box .line {
+  width: 2px;
+  height: 50px;
+  margin-top: 4px;
+  background-color: black;
 }
 .introduction-container .container-img .middle-box {
   display: flex;
@@ -565,6 +581,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 30px;
+  padding: 2px;
   border: none;
   margin: 0 4px;
   cursor: pointer;
@@ -580,4 +597,8 @@
 }
 .navbar-container .list-nav li .nav-link .iconDark {
   color: white;
+}
+.navbar-container .list-nav li .nav-link-selected {
+  border: 1px solid black;
+  background-color: white;
 }/*# sourceMappingURL=index.css.map */
