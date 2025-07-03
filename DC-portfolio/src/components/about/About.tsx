@@ -13,7 +13,7 @@ function About() {
 
   return (
     <div className={`about-container ${theme}`}>
-      <h3>{language === "fr" ?'Présentation':'Presentation'}</h3>
+      <h3>{language === "fr" ? "Présentation" : "Presentation"}</h3>
       <h1>{language === "fr" ? aboutData.titleFr : aboutData.titleEn}</h1>
       <div className="img-about-container">
         <img src={photo} alt="photo-moi" />
@@ -25,7 +25,11 @@ function About() {
                   theme === "light" ? "iconLight" : "iconDark"
                 }`}
               />
-             <h3>{language === "fr" ? aboutData.skillOneFr : aboutData.skillOneEn}</h3>
+              <h3 className="icon-label">
+                {language === "fr"
+                  ? aboutData.skillOneFr
+                  : aboutData.skillOneEn}
+              </h3>
             </div>
             <div className="competence">
               <GiCompass
@@ -33,7 +37,11 @@ function About() {
                   theme === "light" ? "iconLight" : "iconDark"
                 }`}
               />
-              <h3>{language === "fr" ? aboutData.skillTwoFr : aboutData.skillTwoEn}</h3>
+              <h3 className="icon-label">
+                {language === "fr"
+                  ? aboutData.skillTwoFr
+                  : aboutData.skillTwoEn}
+              </h3>
             </div>
             <div className="competence">
               <MdAutorenew
@@ -41,13 +49,15 @@ function About() {
                   theme === "light" ? "iconLight" : "iconDark"
                 }`}
               />
-              <h3>{language === "fr"
-                ? aboutData.skillThreeFr
-                : aboutData.skillThreeEn}</h3> 
+              <h3 className="icon-label">
+                {language === "fr"
+                  ? aboutData.skillThreeFr
+                  : aboutData.skillThreeEn}
+              </h3>
             </div>
           </div>
           <div className="about">
-            <p className={theme}>
+            <p>
               {language === "fr" ? aboutData.aboutTxtFr : aboutData.aboutTxtEn}
             </p>
           </div>
