@@ -18,13 +18,13 @@ function Introduction() {
   return (
     <div className={`introduction-container ${theme}`}>
       <h3>{language === "fr" ? "Hello, je suis" : "Hello, i'am"}</h3>
-      <h1>David</h1>
+      <h1>David Chazoule</h1>
       <h3>Développeur web </h3>
       <div className="cv-about-container">
-        <button>
+        <button className="cv-style">
           {language === "fr" ? "Télécharger mon CV" : "download my CV"}
         </button>
-        <button onClick={() => scrollTo("about")}>
+        <button className="btn-style" onClick={() => scrollTo("about")}>
           {language === "fr" ? "A propos de moi" : "About me"}
         </button>
       </div>
@@ -34,7 +34,7 @@ function Introduction() {
             <FaLinkedin className="icon-social" />
           </a>
           <a href="https://github.com/David-Chazoule">
-            <FaGithub className="icon-social" />
+            <FaGithub className={`icon-social ${theme? "":"icon-dark"}`} />
           </a>
 
           <span className="line" />
