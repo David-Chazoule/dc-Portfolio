@@ -467,6 +467,11 @@
 .skills-container.dark {
   background-color: rgb(52, 51, 51);
 }
+.skills-container h1 {
+  margin-top: 10px;
+  color: rgb(66, 63, 63);
+  font-weight: 700;
+}
 .skills-container .skills-box {
   display: flex;
   width: 100%;
@@ -481,9 +486,15 @@
   align-items: center;
   width: 500px;
   border-radius: 20px;
-  background-color: beige;
+  background-color: white;
   padding: 10px;
-  margin-top: 4vh;
+  margin-top: 2vh;
+}
+.skills-container .skills-box .skill-dev h3,
+.skills-container .skills-box .skill-tools h3 {
+  color: rgb(142, 142, 222);
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 .skills-container .skills-box .skill-dev .skills-grids,
 .skills-container .skills-box .skill-tools .skills-grids {
@@ -501,10 +512,16 @@
   padding: 1rem;
   border-radius: 8px;
 }
+.skills-container .skills-box .skill-dev .skill-description h3,
+.skills-container .skills-box .skill-tools .skill-description h3 {
+  color: rgb(142, 142, 222);
+  font-weight: 700;
+}
 .skills-container .skills-box .skill-dev .skill-icon,
 .skills-container .skills-box .skill-tools .skill-icon {
   width: 34px;
   height: auto;
+  color: rgb(142, 142, 222);
 }
 .skills-container .skills-box .skill-dev .skill-level,
 .skills-container .skills-box .skill-tools .skill-level {
@@ -512,16 +529,19 @@
   flex-direction: column;
   justify-content: center;
 }
-.skills-container .skills-box .skill-dev .skill-level h3,
-.skills-container .skills-box .skill-tools .skill-level h3 {
+.skills-container .skills-box .skill-dev .skill-level h4,
+.skills-container .skills-box .skill-tools .skill-level h4 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .skills-container .skills-box .skill-dev .skill-level p,
 .skills-container .skills-box .skill-tools .skill-level p {
   margin: 0;
   font-size: 0.9rem;
   opacity: 0.8;
+  color: rgb(79, 76, 76);
+  font-weight: 600;
+  font-style: italic;
 }
 
 .contact-container {
