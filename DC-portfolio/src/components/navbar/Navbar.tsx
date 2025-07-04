@@ -60,7 +60,7 @@ function Navbar() {
                 <IconComponent
                   className={`nav-icon  ${
                     theme === "light" ? "iconLight" : "iconDark"
-                  } `}
+                  } ${selectedId === item.id ? "icon-selected" : ""}`}
                 />
               </button>
             </li>

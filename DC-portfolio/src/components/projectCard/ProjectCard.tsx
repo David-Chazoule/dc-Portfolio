@@ -34,7 +34,7 @@ function ProjectCard({ project, onClick }: Props) {
           {language === "fr" ? project.titleFr : project.titleEn}
         </p>
 
-        <p onClick={() => onClick(project)}>
+        <p className="information-design" onClick={() => onClick(project)}>
           {language === "fr" ? "Plus d'informations" : "More information"}
         </p>
       </div>

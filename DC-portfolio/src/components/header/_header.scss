@@ -34,7 +34,7 @@
   }
 
   &.scrolled {
-    -webkit-box-shadow: -1px 11px 25px -2px rgba(0, 0, 0, 0.51);
-    box-shadow: -1px 11px 25px -2px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
+    box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
   }
 }
