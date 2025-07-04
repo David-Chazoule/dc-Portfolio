@@ -45,7 +45,7 @@ function ProjectModal({ project, onClose }: Props) {
         <img src={`/img/${project.img}.gif`} alt={project.img + `image`} />
 
         <div className="modal-detail">
-          <h2>{language === "fr" ? project.titleFr : project.titleEn}</h2>
+          <h1>{language === "fr" ? project.titleFr : project.titleEn}</h1>
           <p>
             {language === "fr" ? project.descriptionFr : project.descriptionEn}
           </p>
