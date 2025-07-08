@@ -33,24 +33,34 @@ function Contact() {
     <div className={`contact-container ${theme}`}>
       <h1>Contactez moi</h1>
       <div className="contact-card">
+        <h2>Un petit message pour en savoir plus ?</h2>
         <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="user_name"
-            placeholder="votre nom"
-            required
-          />
-          <input
-            type="email"
-            name="user_email"
-            placeholder="votre adresse mail"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="votre message"
-            required
-          ></textarea>
+          <div>
+            <label>Nom</label>
+            <input
+              type="text"
+              name="user_name"
+              placeholder="votre nom"
+              required
+            />
+          </div>
+          <div>
+            <label>Email</label>
+            <input
+              type="email"
+              name="user_email"
+              placeholder="votre adresse mail"
+              required
+            />
+          </div>
+          <div>
+            <label>Message</label>
+            <textarea
+              name="message"
+              placeholder="votre message"
+              required
+            ></textarea>
+          </div>
           <button type="submit">Envoyez</button>
         </form>
       </div>

@@ -15,25 +15,72 @@
     background-color: $themeDarkPrimaire;
   }
 
+  h1 {
+    margin: 0 0 10px 0;
+    color: $txtLight;
+  }
+
   .contact-card {
     display: flex;
     width: 600px;
     flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin-bottom: 20px;
+      color: $textLightTwo;
+    }
 
     form {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      input {
-        width: 300px;
-        margin: 6px;
+      div {
+        position: relative;
+        label {
+          position: absolute;
+          color: $btnLight;
+          font-weight: 700;
+          background-color: $themeLightPrimaire;
+          left: 2em;
+          top: -6px;
+          font-size: 18px;
+          padding: 4px 8px;
+        }
+
+        input {
+          width: 300px;
+          margin: 6px;
+          border: 3px solid $btnLight;
+          padding: 20px;
+          border-radius: 15px;
+          background-color: $themeLightPrimaire;
+          margin: 10px 0;
+        }
+
+        textarea {
+          width: 300px;
+          height: 200px;
+          margin: 10px 0;
+          background-color: $themeLightPrimaire;
+          border: 3px solid $btnLight;
+          padding: 10px;
+          border-radius: 15px;
+        }
       }
 
-      textarea {
-        width: 300px;
-        height: 200px;
-        margin: 6px;
+      button {
+        background-color: rgb(142, 142, 222);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        width: 140px;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 16px;
       }
     }
   }

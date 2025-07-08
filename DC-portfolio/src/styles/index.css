@@ -580,24 +580,67 @@
 .contact-container.dark {
   background-color: rgb(52, 51, 51);
 }
+.contact-container h1 {
+  margin: 0 0 10px 0;
+  color: rgb(66, 63, 63);
+}
 .contact-container .contact-card {
   display: flex;
   width: 600px;
   flex-direction: column;
+  align-items: center;
+}
+.contact-container .contact-card h2 {
+  margin-bottom: 20px;
+  color: rgb(79, 76, 76);
 }
 .contact-container .contact-card form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contact-container .contact-card form input {
+.contact-container .contact-card form div {
+  position: relative;
+}
+.contact-container .contact-card form div label {
+  position: absolute;
+  color: rgb(142, 142, 222);
+  font-weight: 700;
+  background-color: #f0f4f8;
+  left: 2em;
+  top: -6px;
+  font-size: 18px;
+  padding: 4px 8px;
+}
+.contact-container .contact-card form div input {
   width: 300px;
   margin: 6px;
+  border: 3px solid rgb(142, 142, 222);
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f0f4f8;
+  margin: 10px 0;
 }
-.contact-container .contact-card form textarea {
+.contact-container .contact-card form div textarea {
   width: 300px;
   height: 200px;
-  margin: 6px;
+  margin: 10px 0;
+  background-color: #f0f4f8;
+  border: 3px solid rgb(142, 142, 222);
+  padding: 10px;
+  border-radius: 15px;
+}
+.contact-container .contact-card form button {
+  background-color: rgb(142, 142, 222);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  width: 140px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .button_container {
