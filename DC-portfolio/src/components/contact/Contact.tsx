@@ -31,16 +31,20 @@ function Contact() {
 
   return (
     <div className={`contact-container ${theme}`}>
-      <h1>Contactez moi</h1>
+      <h1>{language === "fr" ? "Contactez moi" : "Contact me"}</h1>
       <div className="contact-card">
-        <h2>Un petit message pour en savoir plus ?</h2>
+        <h2>
+          {language === "fr"
+            ? "Un petit message pour en savoir plus ?"
+            : "A little message to find out more ?"}
+        </h2>
         <form ref={form} onSubmit={sendEmail}>
           <div>
-            <label>Nom</label>
+            <label>{language === "fr" ? "Nom" : "Name"}</label>
             <input
               type="text"
               name="user_name"
-              placeholder="votre nom"
+              placeholder={language === "fr" ? "Votre nom" : "Your name"}
               required
             />
           </div>
@@ -49,7 +53,9 @@ function Contact() {
             <input
               type="email"
               name="user_email"
-              placeholder="votre adresse mail"
+              placeholder={
+                language === "fr" ? "Votre adresse email" : "Your email address"
+              }
               required
             />
           </div>
@@ -57,11 +63,13 @@ function Contact() {
             <label>Message</label>
             <textarea
               name="message"
-              placeholder="votre message"
+              placeholder={language === "fr" ? "Votre message" : "Your message"}
               required
             ></textarea>
           </div>
-          <button type="submit">Envoyez</button>
+          <button type="submit">
+            {language === "fr" ? "Envoyez" : "Send"}
+          </button>
         </form>
       </div>
     </div>
