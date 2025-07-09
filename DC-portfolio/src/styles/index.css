@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "montserrat";
+  src: url(./font/Montserrat-Medium.ttf);
+}
 .about-container {
   display: flex;
   flex-direction: column;
@@ -6,6 +14,7 @@
   transition: background-color 0.4s ease, color 0.4s ease;
   align-items: center;
   justify-content: center;
+  font-family: montserrat;
 }
 .about-container.light {
   background-color: #f0f4f8;
@@ -80,6 +89,7 @@
   color: rgb(79, 76, 76);
 }
 .about-container .img-about-container .presentation .about p {
+  letter-spacing: 1px;
   margin-left: 10px;
 }
 
@@ -104,7 +114,8 @@
   width: 100%;
   height: 20vh;
   align-items: center;
-  background-color: palevioletred;
+  background-color: rgb(187, 187, 230);
+  font-family: montserrat;
 }
 .footer-container h1 {
   margin-top: 1vh;
@@ -171,6 +182,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.4s ease, color 0.4s ease;
+  font-family: montserrat;
 }
 .introduction-container.light {
   background-color: #f0f4f8;
@@ -219,6 +231,9 @@
   background-color: rgb(142, 142, 222);
   border: none;
 }
+.introduction-container .cv-about-container .btn-style:hover {
+  background-color: rgb(96, 96, 163);
+}
 .introduction-container .container-img {
   display: flex;
   align-items: flex-end;
@@ -241,6 +256,9 @@
   margin-top: 4px;
   cursor: pointer;
   color: rgb(142, 142, 222);
+}
+.introduction-container .container-img .left-box a .icon-social:hover {
+  transform: scale(1.2);
 }
 .introduction-container .container-img .left-box .line {
   width: 2px;
@@ -284,6 +302,7 @@
   padding: 10px 0 20px 0;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  font-family: montserrat;
 }
 .card-container img {
   width: 90%;
@@ -301,7 +320,7 @@
   text-align: start;
 }
 .card-container .detail-card .title-card {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   width: 100%;
   margin-top: 20px;
@@ -313,6 +332,9 @@
   color: rgb(142, 142, 222);
   cursor: pointer;
   font-weight: 700;
+}
+.card-container .detail-card .information-design:hover {
+  color: rgb(96, 96, 163);
 }
 
 @keyframes fadeIn {
@@ -348,6 +370,7 @@
   justify-content: center;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+  font-family: montserrat;
 }
 .modal-container .modal-content {
   background-color: white;
@@ -376,12 +399,13 @@
   text-align: center;
 }
 .modal-container .modal-content .modal-detail h1 {
-  margin: 6px 0;
+  margin: 4px 0 10px 0;
   font-size: 36px;
 }
 .modal-container .modal-content .modal-detail p {
   width: 400px;
   font-size: 20px;
+  letter-spacing: 1px;
 }
 .modal-container .modal-content .modal-detail .techno-container {
   display: flex;
@@ -392,6 +416,7 @@
   margin-top: 10px;
 }
 .modal-container .modal-content .modal-detail .techno-container p {
+  font-size: 16px;
   font-weight: 800;
 }
 .modal-container .modal-content .modal-detail .techno-container .techno-icons {
@@ -399,12 +424,12 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 20px 0 10px 0;
+  margin: 20px 0 20px 0;
 }
 .modal-container .modal-content .modal-detail .techno-container .techno-icons .icon-techno {
   width: 50px;
   height: auto;
-  margin: 8px;
+  margin: 8px 16px;
 }
 .modal-container .modal-content .modal-detail .link-container {
   display: flex;
@@ -425,6 +450,15 @@
   padding: 10px;
   font-weight: 700;
   font-size: 16px;
+}
+.modal-container .modal-content .modal-detail .link-container a button:hover {
+  background-color: rgb(96, 96, 163);
+}
+.modal-container .modal-content .modal-detail .footer-modal {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid black;
 }
 .modal-container .modal-content .modal-detail .footer-modal button {
   align-self: flex-end;
@@ -484,6 +518,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.4s ease, color 0.4s ease;
+  font-family: montserrat;
 }
 .skills-container.light {
   background-color: #f0f4f8;
@@ -576,6 +611,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.4s ease, color 0.4s ease;
+  font-family: montserrat;
 }
 .contact-container.light {
   background-color: #f0f4f8;
@@ -709,7 +745,7 @@
           backdrop-filter: blur(10px);
 }
 .navbar-container .list-nav li {
-  margin: 10px;
+  margin: 4px;
   list-style-type: none;
 }
 .navbar-container .list-nav li .nav-link {

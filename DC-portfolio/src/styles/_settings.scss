@@ -1,11 +1,20 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./font/Roboto-Regular.ttf);
+}
 
+@font-face {
+  font-family: "montserrat";
+  src: url(./font/Montserrat-Medium.ttf);
+}
 
+$fontone: Roboto;
+$fonttwo: montserrat;
 
 //color
 $themeDarkPrimaire: rgb(52, 51, 51);
-$themeDarkSecondaire : rgb(10, 10, 102);
-$btnDark : red;
-
+$themeDarkSecondaire: rgb(10, 10, 102);
+$btnDark: red;
 
 $themeLightPrimaire: #f0f4f8;
 $themeLightSecondaire: white;

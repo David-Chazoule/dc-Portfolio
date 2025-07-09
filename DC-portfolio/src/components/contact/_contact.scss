@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.4s ease, color 0.4s ease;
+  font-family: $fonttwo;
   &.light {
     background-color: $themeLightPrimaire;
   }

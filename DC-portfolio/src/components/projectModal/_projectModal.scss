@@ -1,3 +1,5 @@
+@use "../../styles/settings" as *;
+
 @keyframes fadeIn {
   from {
     transform: scale(0.95);
@@ -32,6 +34,7 @@
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(2px);
+  font-family: $fonttwo;
 
   .modal-content {
     background-color: white;
@@ -60,12 +63,13 @@
       align-items: center;
       text-align: center;
       h1 {
-        margin: 6px 0;
+        margin: 4px 0 10px 0;
         font-size: 36px;
       }
       p {
         width: 400px;
         font-size: 20px;
+        letter-spacing: 1px;
       }
       .techno-container {
         display: flex;
@@ -76,6 +80,7 @@
         margin-top: 10px;
 
         p {
+          font-size: 16px;
           font-weight: 800;
         }
         .techno-icons {
@@ -83,12 +88,12 @@
           width: 100%;
           align-items: center;
           justify-content: center;
-          margin: 20px 0 10px 0;
+          margin: 20px 0 20px 0;
 
           .icon-techno {
             width: 50px;
             height: auto;
-            margin: 8px;
+            margin: 8px 16px;
           }
         }
       }
@@ -112,11 +117,19 @@
             padding: 10px;
             font-weight: 700;
             font-size: 16px;
+
+            &:hover {
+              background-color: rgb(96, 96, 163);
+            }
           }
         }
       }
 
       .footer-modal {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        border-top: 1px solid black;
         button {
           align-self: flex-end;
           padding: 8px 16px;
