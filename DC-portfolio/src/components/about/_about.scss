@@ -31,6 +31,9 @@
     color: $txtLight;
     font-weight: 700;
   }
+  .darkWrite {
+    color: rgb(225, 219, 219);
+  }
 
   .img-about-container {
     display: flex;
@@ -63,6 +66,7 @@
           padding: 10px;
           text-align: center;
           border-radius: 20px;
+
           .icon-competence {
             width: 30px;
             height: auto;
@@ -75,11 +79,15 @@
           }
 
           .iconLight {
-            color: white;
+            color: black;
           }
           .iconDark {
             color: white;
           }
+        }
+
+        .competenceDark {
+          background-color: $themeDarkSecondaire;
         }
       }
 

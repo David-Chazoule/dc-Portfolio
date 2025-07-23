@@ -43,7 +43,6 @@
         background-color: transparent;
 
         .nav-icon {
-          
           width: 20px;
           height: auto;
         }
@@ -55,19 +54,18 @@
           color: white;
         }
 
-        .icon-selected{
+        .icon-selected {
           color: black;
         }
       }
 
       .nav-link-selected {
         border: none;
-         background: linear-gradient(
-    to top,
-    rgba(142, 142, 222, 0.3),  
-    rgba(142, 142, 222, 1)     
-  );
-       
+        background: linear-gradient(
+          to top,
+          rgba(142, 142, 222, 0.3),
+          rgba(142, 142, 222, 1)
+        );
       }
     }
   }

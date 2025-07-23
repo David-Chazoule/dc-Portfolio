@@ -13,43 +13,71 @@ function About() {
 
   return (
     <div className={`about-container ${theme}`}>
-      <h3>{language === "fr" ? "Présentation" : "Presentation"}</h3>
-      <h1>{language === "fr" ? aboutData.titleFr : aboutData.titleEn}</h1>
+      <h3 className={theme === "light" ? "" : "darkWrite"}>
+        {language === "fr" ? "Présentation" : "Presentation"}
+      </h3>
+      <h1 className={theme === "light" ? "" : "darkWrite"}>
+        {language === "fr" ? aboutData.titleFr : aboutData.titleEn}
+      </h1>
       <div className="img-about-container">
         <img src={photo} alt="photo-moi" />
         <div className="presentation">
           <div className="competence-box">
-            <div className="competence">
+            <div
+              className={`competence ${
+                theme === "light" ? "" : "competenceDark"
+              }`}
+            >
               <FaPalette
                 className={`icon-competence ${
                   theme === "light" ? "iconLight" : "iconDark"
                 }`}
               />
-              <h3 className="icon-label">
+              <h3
+                className={`icon-label ${
+                  theme === "light" ? "iconLight" : "iconDark"
+                }`}
+              >
                 {language === "fr"
                   ? aboutData.skillOneFr
                   : aboutData.skillOneEn}
               </h3>
             </div>
-            <div className="competence">
+            <div
+              className={`competence ${
+                theme === "light" ? "" : "competenceDark"
+              }`}
+            >
               <GiCompass
                 className={`icon-competence ${
                   theme === "light" ? "iconLight" : "iconDark"
                 }`}
               />
-              <h3 className="icon-label">
+              <h3
+                className={`icon-label ${
+                  theme === "light" ? "iconLight" : "iconDark"
+                }`}
+              >
                 {language === "fr"
                   ? aboutData.skillTwoFr
                   : aboutData.skillTwoEn}
               </h3>
             </div>
-            <div className="competence">
+            <div
+              className={`competence ${
+                theme === "light" ? "" : "competenceDark"
+              }`}
+            >
               <MdAutorenew
                 className={`icon-competence ${
                   theme === "light" ? "iconLight" : "iconDark"
                 }`}
               />
-              <h3 className="icon-label">
+              <h3
+                className={`icon-label ${
+                  theme === "light" ? "iconLight" : "iconDark"
+                }`}
+              >
                 {language === "fr"
                   ? aboutData.skillThreeFr
                   : aboutData.skillThreeEn}
@@ -57,7 +85,7 @@ function About() {
             </div>
           </div>
           <div className="about">
-            <p>
+            <p className={theme === "light" ? "" : "darkWrite"}>
               {language === "fr" ? aboutData.aboutTxtFr : aboutData.aboutTxtEn}
             </p>
           </div>

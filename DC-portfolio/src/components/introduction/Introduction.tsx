@@ -17,34 +17,51 @@ function Introduction() {
   };
   return (
     <div className={`introduction-container ${theme}`}>
-      <h3>{language === "fr" ? "Hello, je suis" : "Hello, i'am"}</h3>
-      <h1>David Chazoule</h1>
-      <h3>Développeur web </h3>
+      <h3 className={theme === "light" ? "" : "darkWrite"}>
+        {language === "fr" ? "Hello, je suis" : "Hello, i'am"}
+      </h3>
+      <h1 className={theme === "light" ? "" : "darkWrite"}>David Chazoule</h1>
+      <h3 className={theme === "light" ? "" : "darkWrite"}>Développeur web </h3>
       <div className="cv-about-container">
-        <button className="cv-style">
+        <button
+          className={`cv-style ${theme === "light" ? "cvLight" : "cvDark"}`}
+        >
           {language === "fr" ? "Télécharger mon CV" : "download my CV"}
         </button>
-        <button className="btn-style" onClick={() => scrollTo("about")}>
+        <button
+          className={`btn-style ${
+            theme === "light" ? "btn-styleLight" : "btn-styleDark"
+          }`}
+          onClick={() => scrollTo("about")}
+        >
           {language === "fr" ? "A propos de moi" : "About me"}
         </button>
       </div>
       <div className="container-img">
         <div className="left-box">
           <a href="https://www.linkedin.com/in/david-chazoule/">
-            <FaLinkedin className="icon-social" />
+            <FaLinkedin
+              className={`icon-social ${theme === "light" ? "" : "icon-dark"}`}
+            />
           </a>
           <a href="https://github.com/David-Chazoule">
-            <FaGithub className={`icon-social ${theme? "":"icon-dark"}`} />
+            <FaGithub
+              className={`icon-social ${theme === "light" ? "" : "icon-dark"}`}
+            />
           </a>
 
-          <span className="line" />
+          <span className={`line ${theme === "light" ? "" : "line-dark"}`} />
         </div>
         <div className="middle-box">
           <img src={photo} alt="" />
         </div>
         <div className="right-box" onClick={() => scrollTo("about")}>
-          <BsMouse className="icon-mousse" />
-          <span>Scroll Down</span>
+          <BsMouse
+            className={`icon-mousse ${theme === "light" ? "" : "mousse-dark"}`}
+          />
+          <span className={theme === "light" ? "" : "writingDark"}>
+            Scroll Down
+          </span>
         </div>
       </div>
     </div>
