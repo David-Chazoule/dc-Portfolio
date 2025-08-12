@@ -21,6 +21,10 @@
     color: $txtLight;
   }
 
+  .darkWrite{
+    color: white;
+  }
+
   .contact-card {
     display: flex;
     width: 600px;
@@ -32,6 +36,9 @@
       color: $textLightTwo;
       font-size: 18px;
     }
+    .darkWrite{
+    color: white;
+  }
 
     form {
       display: flex;
@@ -40,7 +47,7 @@
 
       div {
         position: relative;
-        label {
+        .label {
           position: absolute;
           color: $btnLight;
           font-weight: 700;
@@ -51,17 +58,27 @@
           padding: 4px 8px;
         }
 
-        input {
+        .label-dark{
+          color: white;
+          background-color:$themeDarkPrimaire;
+        }
+
+        .input {
           width: 300px;
           margin: 6px;
-          border: 3px solid $btnLight;
+          
           padding: 20px;
           border-radius: 15px;
           background-color: $themeLightPrimaire;
           margin: 10px 0;
         }
 
-        textarea {
+        .input-dark{
+          border: 3px solid white;
+          background-color:$themeDarkPrimaire ;
+        }
+
+        .textarea {
           width: 300px;
           height: 200px;
           margin: 10px 0;
@@ -69,6 +86,11 @@
           border: 3px solid $btnLight;
           padding: 10px;
           border-radius: 15px;
+        }
+
+        .textarea-dark{
+          background-color:$themeDarkPrimaire ;
+          border: 3px solid white;
         }
       }
 
@@ -83,6 +105,15 @@
         margin-top: 2em;
         font-weight: 700;
         font-size: 16px;
+
+        &:hover {
+              background-color: rgb(96, 96, 163);
+            }
+      }
+
+      .btnDark{
+         background-color: $themeDarkSecondaire;
+
       }
     }
   }

@@ -35,6 +35,10 @@
       margin-top: 20px;
     }
 
+    .titleDark {
+      color: white;
+    }
+
     .information-design {
       font-size: 14px;
       width: 100%;
@@ -47,5 +51,13 @@
         color: rgb(96, 96, 163);
       }
     }
+    .information-design-dark {
+      color: $themeDarkSecondaire;
+    }
   }
+}
+
+.cardDark {
+  background-color: $themeDarkTerciaire;
+  border: 1px solid white;
 }

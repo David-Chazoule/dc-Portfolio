@@ -19,8 +19,18 @@
     background-color: $themeDarkPrimaire;
   }
 
+  h1 {
+    font-weight: 700;
+  }
+
   h3 {
-    margin-top: 18vh;
+    margin: 14vh 0 2vh 0;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .darkWrite {
+    color: white;
   }
 
   .projects-wrap {

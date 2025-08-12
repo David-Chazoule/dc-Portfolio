@@ -41,20 +41,35 @@ function ProjectModal({ project, onClose }: Props) {
 
   return (
     <div className="modal-container">
-      <div className={`modal-content ${closing ? "fade-out" : "fade-in"}`}>
+      <div
+        className={`modal-content ${closing ? "fade-out" : "fade-in"} ${
+          theme === "light" ? "" : "modal-content-dark"
+        }`}
+      >
         <img src={`/img/${project.img}.gif`} alt={project.img + `image`} />
 
         <div className="modal-detail">
-          <h1>{language === "fr" ? project.titleFr : project.titleEn}</h1>
-          <p>
+          <h1 className={theme === "light" ? "" : "darkWrite"}>
+            {language === "fr" ? project.titleFr : project.titleEn}
+          </h1>
+          <p className={theme === "light" ? "" : "darkWrite"}>
             {language === "fr" ? project.descriptionFr : project.descriptionEn}
           </p>
 
           <div className="techno-container">
-            <p>{language === "fr" ? "Techno utilisées" : "Techno used"}</p>
+            <p className={theme === "light" ? "" : "darkWrite"}>
+              {language === "fr" ? "Techno utilisées" : "Techno used"}
+            </p>
             <div className="techno-icons">
               {project.icon.map((IconComponent, index) => {
-                return <IconComponent key={index} className="icon-techno" />;
+                return (
+                  <IconComponent
+                    key={index}
+                    className={`icon-techno ${
+                      theme === "light" ? "" : "icon-techno-dark"
+                    }`}
+                  />
+                );
               })}
             </div>
           </div>
@@ -62,7 +77,7 @@ function ProjectModal({ project, onClose }: Props) {
           <div className="link-container">
             {project.github === true ? (
               <a href={project.githubLink}>
-                <button className={theme === "light" ? "btnLight" : "btnDark"}>
+                <button className={` ${theme === "light" ? "" : "btnDark"}`}>
                   GitHub
                 </button>
               </a>
@@ -72,7 +87,7 @@ function ProjectModal({ project, onClose }: Props) {
 
             {project.git === true ? (
               <a href={project.githubLinkTwo}>
-                <button className={theme === "light" ? "btnLight" : "btnDark"}>
+                <button className={` ${theme === "light" ? "" : "btnDark"}`}>
                   GitHub back-end
                 </button>
               </a>
@@ -81,7 +96,7 @@ function ProjectModal({ project, onClose }: Props) {
             )}
             {project.live === true ? (
               <a href={project.liveLink}>
-                <button className={theme === "light" ? "btnLight" : "btnDark"}>
+                <button className={` ${theme === "light" ? "" : "btnDark"}`}>
                   Live
                 </button>
               </a>

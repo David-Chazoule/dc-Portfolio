@@ -71,6 +71,10 @@
         font-size: 20px;
         letter-spacing: 1px;
       }
+
+      .darkWrite {
+        color: white;
+      }
       .techno-container {
         display: flex;
         flex-direction: column;
@@ -94,6 +98,9 @@
             width: 50px;
             height: auto;
             margin: 8px 16px;
+          }
+          .icon-techno-dark {
+            color: white;
           }
         }
       }
@@ -122,6 +129,13 @@
               background-color: rgb(96, 96, 163);
             }
           }
+
+          .btnDark {
+            background-color: $themeDarkSecondaire;
+            &:hover {
+              background-color: rgb(96, 96, 163);
+            }
+          }
         }
       }
 
@@ -146,6 +160,10 @@
         }
       }
     }
+  }
+
+  .modal-content-dark {
+    background-color: $themeDarkTerciaire;
   }
 
   .fade-in {

@@ -53,7 +53,11 @@ function Navbar() {
               <button
                 onClick={() => scrollTo(item.target)}
                 className={`nav-link ${
-                  selectedId === item.id ? "nav-link-selected" : ""
+                  selectedId === item.id
+                    ? `nav-link-selected ${
+                        theme === "light" ? "" : "nav-link-selected-dark"
+                      }`
+                    : ""
                 }`}
                 title={language === "fr" ? item.menuFr : item.menuEn}
               >

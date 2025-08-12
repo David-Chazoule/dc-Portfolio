@@ -14,8 +14,12 @@ function Projects() {
   console.log("project list", project);
   return (
     <div className={`projects-container ${theme}`}>
-      <h3>{language == "fr" ? "Projets" : "Projects"}</h3>
-      <h1>{language == "fr" ? "Mon Portfolio" : "My Portfolio"}</h1>
+      <h3 className={theme === "light" ? "" : "darkWrite"}>
+        {language == "fr" ? "Projets" : "Projects"}
+      </h3>
+      <h1 className={theme === "light" ? "" : "darkWrite"}>
+        {language == "fr" ? "Mon Portfolio" : "My Portfolio"}
+      </h1>
       <div className="projects-wrap">
         {project.map((project) => (
           <ProjectCard

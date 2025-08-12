@@ -31,17 +31,22 @@ function Contact() {
 
   return (
     <div className={`contact-container ${theme}`}>
-      <h1>{language === "fr" ? "Contactez moi" : "Contact me"}</h1>
+      <h1 className={theme === "light" ? "" : "darkWrite"}>
+        {language === "fr" ? "Contactez moi" : "Contact me"}
+      </h1>
       <div className="contact-card">
-        <h2>
+        <h2 className={theme === "light" ? "" : "darkWrite"}>
           {language === "fr"
             ? "Un petit message pour en savoir plus ?"
             : "A little message to find out more ?"}
         </h2>
         <form ref={form} onSubmit={sendEmail}>
           <div>
-            <label>{language === "fr" ? "Nom" : "Name"}</label>
+            <label className={`label ${theme === "light" ? "" : "label-dark"}`}>
+              {language === "fr" ? "Nom" : "Name"}
+            </label>
             <input
+              className={`input ${theme === "light" ? "" : "input-dark"}`}
               type="text"
               name="user_name"
               placeholder={language === "fr" ? "Votre nom" : "Your name"}
@@ -49,8 +54,11 @@ function Contact() {
             />
           </div>
           <div>
-            <label>Email</label>
+            <label className={`label ${theme === "light" ? "" : "label-dark"}`}>
+              Email
+            </label>
             <input
+              className={`input ${theme === "light" ? "" : "input-dark"}`}
               type="email"
               name="user_email"
               placeholder={
@@ -60,14 +68,20 @@ function Contact() {
             />
           </div>
           <div>
-            <label>Message</label>
+            <label className={`label ${theme === "light" ? "" : "label-dark"}`}>
+              Message
+            </label>
             <textarea
+              className={`textarea ${theme === "light" ? "" : "textarea-dark"}`}
               name="message"
               placeholder={language === "fr" ? "Votre message" : "Your message"}
               required
             ></textarea>
           </div>
-          <button type="submit">
+          <button
+            className={` ${theme === "light" ? "" : "btnDark"}`}
+            type="submit"
+          >
             {language === "fr" ? "Envoyez" : "Send"}
           </button>
         </form>

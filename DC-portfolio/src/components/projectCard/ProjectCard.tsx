@@ -27,14 +27,19 @@ function ProjectCard({ project, onClick }: Props) {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="card-container">
+    <div className={`card-container  ${theme === "light" ? "" : "cardDark"}`}>
       <img src={`/img/${project.img}.gif`} alt={project.img + `image`} />
       <div className="detail-card">
-        <p className="title-card">
+        <p className={`title-card ${theme === "light" ? "" : "titleDark"}`}>
           {language === "fr" ? project.titleFr : project.titleEn}
         </p>
 
-        <p className="information-design" onClick={() => onClick(project)}>
+        <p
+          className={`information-design ${
+            theme === "light" ? "" : "information-design-dark"
+          }`}
+          onClick={() => onClick(project)}
+        >
           {language === "fr" ? "Plus d'informations" : "More information"}
         </p>
       </div>
