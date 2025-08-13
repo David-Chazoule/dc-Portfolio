@@ -18,6 +18,11 @@
     height: 180px;
     border-radius: 20px;
     border: rgba(142, 142, 222, 0.409) solid 1px;
+    
+  }
+
+  .img-dark{
+filter: brightness(70%);
   }
 
   .detail-card {
@@ -59,5 +64,5 @@
 
 .cardDark {
   background-color: $themeDarkTerciaire;
-  border: 1px solid white;
+ 
 }

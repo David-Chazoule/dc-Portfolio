@@ -3,7 +3,9 @@ import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsMouse } from "react-icons/bs";
-import photo from "../about/img/profilePicture.jpg";
+import Lottie from "lottie-react";
+import animationLight from "../../styles/animation/Developmentandcoding.json";
+import animationDark from "../../styles/animation/animationDark.json";
 
 function Introduction() {
   const { theme } = useContext(ThemeContext);
@@ -15,6 +17,7 @@ function Introduction() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <div className={`introduction-container ${theme}`}>
       <h3 className={theme === "light" ? "" : "darkWrite"}>
@@ -53,7 +56,13 @@ function Introduction() {
           <span className={`line ${theme === "light" ? "" : "line-dark"}`} />
         </div>
         <div className="middle-box">
-          <img src={photo} alt="" />
+          <div className="animation-box">
+            <Lottie
+              animationData={theme === "light" ? animationLight : animationDark}
+              loop
+              autoplay
+            />
+          </div>
         </div>
         <div className="right-box" onClick={() => scrollTo("about")}>
           <BsMouse
