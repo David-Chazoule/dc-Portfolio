@@ -13,7 +13,7 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className={`header-container ${theme} ${scrolled ? "scrolled" : ""} `}>
+    <div className={`header-container ${theme} ${scrolled ? `scrolled-${theme}` : ""} `}>
       <div className="header-box">
         <div className="logo">Logo</div>
         <div className="settings">
