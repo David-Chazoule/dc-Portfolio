@@ -21,7 +21,7 @@
     color: $txtLight;
   }
 
-  .darkWrite{
+  .darkWrite {
     color: white;
   }
 
@@ -36,89 +36,136 @@
       color: $textLightTwo;
       font-size: 18px;
     }
-    .darkWrite{
-    color: white;
-  }
-    .allContacts-container{
+    .darkWrite {
+      color: white;
+    }
+    .allContacts-container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-    form {
-      display: flex;
-      flex-direction: column;
+
       align-items: center;
 
-      div {
-        position: relative;
-        .label {
-          position: absolute;
-          color: $btnLight;
-          font-weight: 700;
-          background-color: $themeLightPrimaire;
-          left: 2em;
-          top: -6px;
-          font-size: 18px;
-          padding: 4px 8px;
-        }
-
-        .label-dark{
-          color: white;
-          background-color:$themeDarkPrimaire;
-        }
-
-        .input {
+      .contacts-box {
+        display: flex;
+        flex-direction: column;
+        background-color: $themeLightPrimaire;
+        margin-right: 10px;
+        align-items: center;
+        .img-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 300px;
-          margin: 6px;
-          border: 3px solid $btnLight;
-          padding: 20px;
-          border-radius: 15px;
-          background-color: $themeLightPrimaire;
-          margin: 10px 0;
+          
         }
 
-        .input-dark{
-          border: 3px solid white;
-          background-color:$themeDarkPrimaire ;
+        .img-container-dark {
+          background-color: $themeDarkPrimaire;
         }
 
-        .textarea {
-          width: 300px;
-          height: 200px;
-          margin: 10px 0;
-          background-color: $themeLightPrimaire;
-          border: 3px solid $btnLight;
-          padding: 10px;
-          border-radius: 15px;
-        }
-
-        .textarea-dark{
-          background-color:$themeDarkPrimaire ;
-          border: 3px solid white;
-        }
-      }
-
-      button {
-        background-color: rgb(142, 142, 222);
-        color: white;
-        padding: 8px 16px;
-        border-radius: 4px;
-        cursor: pointer;
-        border: none;
-        width: 140px;
-        margin-top: 2em;
-        font-weight: 700;
-        font-size: 16px;
-
-        &:hover {
-              background-color: rgb(96, 96, 163);
+        .social-media-box {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 100%;
+          a {
+            text-decoration: none;
+            color: inherit;
+            .icon-social {
+              width: 30px;
+              height: auto;
+              margin-top: 4px;
+              cursor: pointer;
+              color: $btnLight;
+              &:hover {
+                transform: scale(1.2);
+              }
             }
+          }
+
+          .icon-dark {
+            color: $themeDarkSecondaire;
+          }
+        }
+
+        .social-media-box-dark {
+          background-color: $themeDarkPrimaire;
+        }
       }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      .btnDark{
-         background-color: $themeDarkSecondaire;
+        div {
+          position: relative;
+          .label {
+            position: absolute;
+            color: $btnLight;
+            font-weight: 700;
+            background-color: $themeLightPrimaire;
+            left: 2em;
+            top: -6px;
+            font-size: 18px;
+            padding: 4px 8px;
+          }
 
+          .label-dark {
+            color: white;
+            background-color: $themeDarkPrimaire;
+          }
+
+          .input {
+            width: 300px;
+            margin: 6px;
+            border: 3px solid $btnLight;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: $themeLightPrimaire;
+            margin: 10px 0;
+          }
+
+          .input-dark {
+            border: 3px solid white;
+            background-color: $themeDarkPrimaire;
+          }
+
+          .textarea {
+            width: 300px;
+            height: 200px;
+            margin: 10px 0;
+            background-color: $themeLightPrimaire;
+            border: 3px solid $btnLight;
+            padding: 10px;
+            border-radius: 15px;
+          }
+
+          .textarea-dark {
+            background-color: $themeDarkPrimaire;
+            border: 3px solid white;
+          }
+        }
+
+        button {
+          background-color: rgb(142, 142, 222);
+          color: white;
+          padding: 8px 16px;
+          border-radius: 4px;
+          cursor: pointer;
+          border: none;
+          width: 140px;
+          margin-top: 2em;
+          font-weight: 700;
+          font-size: 16px;
+
+          &:hover {
+            background-color: rgb(96, 96, 163);
+          }
+        }
+
+        .btnDark {
+          background-color: $themeDarkSecondaire;
+        }
       }
     }
-  }
   }
 }

@@ -2,7 +2,10 @@ import { useContext, useRef } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import emailjs from "@emailjs/browser";
-
+import Lottie from "lottie-react";
+import contactLight from "../../styles/animation/contactLight.json";
+import contactDark from "../../styles/animation/contactDark.json";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const { theme } = useContext(ThemeContext);
@@ -42,55 +45,95 @@ function Contact() {
         </h2>
         <div className="allContacts-container">
           <div className="contacts-box">
-         <div className="img-container"></div>
-         <div className="social-media-box">
-          </div>   
+            <div
+              className={`img-container ${
+                theme === "light" ? "" : "img-container-dark"
+              }`}
+            >
+              <Lottie
+                animationData={theme === "light" ? contactLight : contactDark}
+                loop
+                autoplay
+              />
+            </div>
+            <div
+              className={` social-media-box ${
+                theme === "light" ? "" : "social-media-box-dark"
+              }`}
+            >
+              <a href="https://www.linkedin.com/in/david-chazoule/">
+                <FaLinkedin
+                  className={`icon-social ${
+                    theme === "light" ? "" : "icon-dark"
+                  }`}
+                />
+              </a>
+              <a href="https://github.com/David-Chazoule">
+                <FaGithub
+                  className={`icon-social ${
+                    theme === "light" ? "" : "icon-dark"
+                  }`}
+                />
+              </a>
+            </div>
           </div>
-        <form ref={form} onSubmit={sendEmail}>
-          <div>
-            <label className={`label ${theme === "light" ? "" : "label-dark"}`}>
-              {language === "fr" ? "Nom" : "Name"}
-            </label>
-            <input
-              className={`input ${theme === "light" ? "" : "input-dark"}`}
-              type="text"
-              name="user_name"
-              placeholder={language === "fr" ? "Votre nom" : "Your name"}
-              required
-            />
-          </div>
-          <div>
-            <label className={`label ${theme === "light" ? "" : "label-dark"}`}>
-              Email
-            </label>
-            <input
-              className={`input ${theme === "light" ? "" : "input-dark"}`}
-              type="email"
-              name="user_email"
-              placeholder={
-                language === "fr" ? "Votre adresse email" : "Your email address"
-              }
-              required
-            />
-          </div>
-          <div>
-            <label className={`label ${theme === "light" ? "" : "label-dark"}`}>
-              Message
-            </label>
-            <textarea
-              className={`textarea ${theme === "light" ? "" : "textarea-dark"}`}
-              name="message"
-              placeholder={language === "fr" ? "Votre message" : "Your message"}
-              required
-            ></textarea>
-          </div>
-          <button
-            className={` ${theme === "light" ? "" : "btnDark"}`}
-            type="submit"
-          >
-            {language === "fr" ? "Envoyez" : "Send"}
-          </button>
-        </form>
+          <form ref={form} onSubmit={sendEmail}>
+            <div>
+              <label
+                className={`label ${theme === "light" ? "" : "label-dark"}`}
+              >
+                {language === "fr" ? "Nom" : "Name"}
+              </label>
+              <input
+                className={`input ${theme === "light" ? "" : "input-dark"}`}
+                type="text"
+                name="user_name"
+                placeholder={language === "fr" ? "Votre nom" : "Your name"}
+                required
+              />
+            </div>
+            <div>
+              <label
+                className={`label ${theme === "light" ? "" : "label-dark"}`}
+              >
+                Email
+              </label>
+              <input
+                className={`input ${theme === "light" ? "" : "input-dark"}`}
+                type="email"
+                name="user_email"
+                placeholder={
+                  language === "fr"
+                    ? "Votre adresse email"
+                    : "Your email address"
+                }
+                required
+              />
+            </div>
+            <div>
+              <label
+                className={`label ${theme === "light" ? "" : "label-dark"}`}
+              >
+                Message
+              </label>
+              <textarea
+                className={`textarea ${
+                  theme === "light" ? "" : "textarea-dark"
+                }`}
+                name="message"
+                placeholder={
+                  language === "fr" ? "Votre message" : "Your message"
+                }
+                required
+              ></textarea>
+            </div>
+            <button
+              className={` ${theme === "light" ? "" : "btnDark"}`}
+              type="submit"
+            >
+              {language === "fr" ? "Envoyez" : "Send"}
+            </button>
+          </form>
         </div>
       </div>
     </div>
