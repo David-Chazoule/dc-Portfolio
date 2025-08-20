@@ -40,6 +40,12 @@ function Contact() {
             ? "Un petit message pour en savoir plus ?"
             : "A little message to find out more ?"}
         </h2>
+        <div className="allContacts-container">
+          <div className="contacts-box">
+         <div className="img-container"></div>
+         <div className="social-media-box">
+          </div>   
+          </div>
         <form ref={form} onSubmit={sendEmail}>
           <div>
             <label className={`label ${theme === "light" ? "" : "label-dark"}`}>
@@ -85,6 +91,7 @@ function Contact() {
             {language === "fr" ? "Envoyez" : "Send"}
           </button>
         </form>
+        </div>
       </div>
     </div>
   );

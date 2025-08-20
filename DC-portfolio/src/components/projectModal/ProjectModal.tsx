@@ -40,7 +40,7 @@ function ProjectModal({ project, onClose }: Props) {
   };
 
   return (
-    <div className="modal-container">
+    <div className="modal-container" >
       <div
         className={`modal-content ${closing ? "fade-out" : "fade-in"} ${
           theme === "light" ? "" : "modal-content-dark"

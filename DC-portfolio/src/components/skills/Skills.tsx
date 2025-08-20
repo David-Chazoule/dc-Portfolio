@@ -14,10 +14,16 @@ function Skills() {
   const { language } = useContext(LanguageContext);
   return (
     <div className={`skills-container ${theme}`}>
-      <h1>{language === "fr" ? "Mes compétences" : "My skills"}</h1>
+      <h1 className={`${theme === "light" ? "title-light" : "title-dark"}`}>
+        {language === "fr" ? "Mes compétences" : "My skills"}
+      </h1>
       <div className="skills-box">
-        <div className="skill-dev">
-          <h3>{language === "fr" ? "Développement web" : "Web development"}</h3>
+        <div
+          className={` skill-dev ${theme === "light" ? "" : "skill-dev-Dark"}`}
+        >
+          <h3 className={`${theme === "light" ? "title-light" : "title-dark"}`}>
+            {language === "fr" ? "Développement web" : "Web development"}
+          </h3>
           <div className="skills-grids">
             {MySkills.map((item, index) => {
               const IconComponent = item.icon;
@@ -29,16 +35,28 @@ function Skills() {
                     }`}
                   />
                   <div className="skill-level">
-                    <h4>{item.name}</h4>
-                    <p>{language === "fr" ? item.levelFr : item.levelEn}</p>
+                    <h4
+                      className={`${theme === "light" ? "" : "titleTechoDark"}`}
+                    >
+                      {item.name}
+                    </h4>
+                    <p
+                      className={`${theme === "light" ? "" : "levelTechoDark"}`}
+                    >
+                      {language === "fr" ? item.levelFr : item.levelEn}
+                    </p>
                   </div>
                 </div>
               );
             })}
           </div>
         </div>
-        <div className="skill-tools">
-          <h3>
+        <div
+          className={` skill-tools ${
+            theme === "light" ? "" : "skill-tools-dark"
+          }`}
+        >
+          <h3 className={`${theme === "light" ? "title-light" : "title-dark"}`}>
             {language === "fr"
               ? "Outils & collaborations"
               : "Tools & collaborations"}
@@ -54,8 +72,16 @@ function Skills() {
                     }`}
                   />
                   <div className="skill-level">
-                    <h4>{item.name}</h4>
-                    <p>{language === "fr" ? item.levelFr : item.levelEn}</p>
+                    <h4
+                      className={`${theme === "light" ? "" : "titleTechoDark"}`}
+                    >
+                      {item.name}
+                    </h4>
+                    <p
+                      className={`${theme === "light" ? "" : "levelTechoDark"}`}
+                    >
+                      {language === "fr" ? item.levelFr : item.levelEn}
+                    </p>
                   </div>
                 </div>
               );
