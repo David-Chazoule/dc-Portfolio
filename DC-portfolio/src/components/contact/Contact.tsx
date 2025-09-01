@@ -2,9 +2,6 @@ import { useContext, useRef } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import emailjs from "@emailjs/browser";
-import Lottie from "lottie-react";
-import contactLight from "../../styles/animation/contactLight.json";
-import contactDark from "../../styles/animation/contactDark.json";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -45,17 +42,6 @@ function Contact() {
         </h2>
         <div className="allContacts-container">
           <div className="contacts-box">
-            <div
-              className={`img-container ${
-                theme === "light" ? "" : "img-container-dark"
-              }`}
-            >
-              <Lottie
-                animationData={theme === "light" ? contactLight : contactDark}
-                loop
-                autoplay
-              />
-            </div>
             <div
               className={` social-media-box ${
                 theme === "light" ? "" : "social-media-box-dark"

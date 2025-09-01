@@ -41,7 +41,6 @@
     }
     .allContacts-container {
       display: flex;
-
       align-items: center;
 
       .contacts-box {
@@ -50,30 +49,21 @@
         background-color: $themeLightPrimaire;
         margin-right: 10px;
         align-items: center;
-        .img-container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 300px;
-          
-        }
-
-        .img-container-dark {
-          background-color: $themeDarkPrimaire;
-        }
 
         .social-media-box {
           display: flex;
+          flex-direction: column;
           align-items: center;
-          justify-content: space-around;
+          justify-content: flex-end;
           width: 100%;
+          height: 280px;
           a {
             text-decoration: none;
             color: inherit;
             .icon-social {
               width: 30px;
               height: auto;
-              margin-top: 4px;
+              margin-top: 20px;
               cursor: pointer;
               color: $btnLight;
               &:hover {
