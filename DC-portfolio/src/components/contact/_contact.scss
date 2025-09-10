@@ -34,7 +34,8 @@
     h2 {
       margin-bottom: 20px;
       color: $textLightTwo;
-      font-size: 18px;
+      font-size: 16px;
+      font-weight: 500;
   
     }
     .darkWrite {
@@ -73,11 +74,13 @@
                 transform: scale(1.2);
               }
             }
-          }
 
-          .icon-dark {
+             .icon-dark {
             color: $themeDarkSecondaire;
           }
+          }
+
+         
         }
 
         .social-media-box-dark {
@@ -105,7 +108,7 @@
           }
 
           .label-dark {
-            color: white;
+            color: $themeDarkSecondaire;
             background-color: $themeDarkPrimaire;
           }
 
@@ -120,7 +123,7 @@
           }
 
           .input-dark {
-            border: 3px solid white;
+            border: 3px solid $themeDarkSecondaire;
             background-color: $themeDarkPrimaire;
           }
 
@@ -136,7 +139,7 @@
 
           .textarea-dark {
             background-color: $themeDarkPrimaire;
-            border: 3px solid white;
+            border: 3px solid $themeDarkSecondaire;
           }
         }
 
