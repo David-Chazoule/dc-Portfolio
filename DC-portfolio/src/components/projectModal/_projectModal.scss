@@ -41,16 +41,18 @@
     border-radius: 8px;
     max-width: 600px;
     width: 90%;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     animation: fadeIn 0.3s ease-out;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: start;
     gap: 20px;
     animation: fadeIn 0.3s ease-out;
 
     img {
-      width: 100%;
+      width: 600px;
       height: auto;
       border-radius: 6px;
       border: rgba(142, 142, 222, 0.6) solid 1px;
@@ -64,11 +66,11 @@
       text-align: center;
       h1 {
         margin: 4px 0 10px 0;
-        font-size: 36px;
+        font-size: 32px;
       }
       p {
-        width: 400px;
-        font-size: 20px;
+        width: 500px;
+        font-size: 18px;
         letter-spacing: 1px;
       }
 
@@ -92,7 +94,7 @@
           width: 100%;
           align-items: center;
           justify-content: center;
-          margin: 20px 0 20px 0;
+          margin: 0 0 20px 0;
 
           .icon-techno {
             width: 50px;
@@ -143,7 +145,7 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        border-top: 1px solid black;
+        border-top: 2px solid black;
         button {
           align-self: flex-end;
           padding: 8px 16px;
@@ -158,6 +160,10 @@
             background-color: #444;
           }
         }
+      }
+
+      .footer-modalDark {
+        border-top: 2px solid white;
       }
     }
   }
