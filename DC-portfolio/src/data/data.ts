@@ -7,7 +7,6 @@ import type {
 import {
   FaHome,
   FaUser,
-  FaFile,
   FaCode,
   FaProjectDiagram,
   FaEnvelope,
@@ -56,13 +55,7 @@ export const navbar: navbarType[] = [
     target: "skills",
     icon: FaProjectDiagram,
   },
-  {
-    id: "courses",
-    menuFr: "PARCOURS",
-    menuEn: "COURSES",
-    target: "courses",
-    icon: FaFile,
-  },
+
   {
     id: "projects",
     menuFr: "PROJETS",

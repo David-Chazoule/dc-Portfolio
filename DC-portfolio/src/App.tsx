@@ -1,7 +1,7 @@
 import "./App.css";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
-import Courses from "./components/courses/Courses";
+
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Introduction from "./components/introduction/Introduction";
@@ -23,10 +23,6 @@ function App() {
       </section>
       <section id="skills">
         <Skills />
-      </section>
-      <section id="courses">
-        {" "}
-        <Courses />
       </section>
       <section id="projects">
         {" "}
