@@ -1,7 +1,6 @@
 import "./App.css";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
-
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Introduction from "./components/introduction/Introduction";
