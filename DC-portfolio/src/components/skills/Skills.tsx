@@ -14,9 +14,13 @@ function Skills() {
   const { language } = useContext(LanguageContext);
   return (
     <div className={`skills-container ${theme}`}>
-      <h1 className={`${theme === "light" ? "title-light" : "title-dark"}`}>
+      <h3 className={` titleSkills ${theme === "light" ? "" : "darkWrite"}`}>
+        {language === "fr" ? "Stack technique" : "Tech stack"}
+      </h3>
+      <h1 className={theme === "light" ? "" : "darkWrite"}>
         {language === "fr" ? "Mes compétences" : "My skills"}
       </h1>
+
       <div className="skills-box">
         <div
           className={` skill-dev ${theme === "light" ? "" : "skill-dev-Dark"}`}

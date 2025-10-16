@@ -16,17 +16,19 @@
     background-color: $themeDarkPrimaire;
   }
 
+  .titleSkills {
+    margin: 2vh 0 1vh 0;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
   h1 {
     margin-top: 10px;
     color: $txtLight;
     font-weight: 700;
   }
 
-  .title-light {
-    color: $btnLight;
-  }
-
-  .title-dark {
+  .darkWrite {
     color: white;
   }
 
@@ -45,7 +47,7 @@
 
       h3 {
         font-weight: 700;
-        margin-bottom: 8px;
+        margin-bottom: 1px;
       }
 
       .title-light {
