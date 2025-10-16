@@ -42,9 +42,12 @@
     justify-content: center;
     align-items: center;
     img {
-      width: 440px;
-      height: 300px;
-      border-radius: 40px;
+      width: 500px;
+      height: 516px;
+      border-radius: 60px;
+  filter: grayscale(0.6) contrast(1.05) brightness(1.1);
+  
+  transition: all 0.3s ease;
     }
 
     .presentation {
@@ -96,8 +99,9 @@
       .about {
         display: flex;
         margin-top: 2vh;
-        font-size: 20px;
+        font-size: 18px;
         color: $textLightTwo;
+        line-height: 1.6em;
 
         p {
           letter-spacing: 1px;
