@@ -27,7 +27,7 @@
 
   .contact-card {
     display: flex;
-    width: 600px;
+    max-width: 600px;
     flex-direction: column;
     align-items: center;
 
@@ -36,7 +36,6 @@
       color: $textLightTwo;
       font-size: 16px;
       font-weight: 500;
-  
     }
     .darkWrite {
       color: white;
@@ -44,7 +43,6 @@
     .allContacts-container {
       display: flex;
       align-items: center;
-      
 
       .contacts-box {
         display: flex;
@@ -52,7 +50,6 @@
         background-color: $themeLightPrimaire;
         margin-right: 10px;
         align-items: center;
-        
 
         .social-media-box {
           display: flex;
@@ -75,12 +72,10 @@
               }
             }
 
-             .icon-dark {
-            color: $themeDarkSecondaire;
+            .icon-dark {
+              color: $themeDarkSecondaire;
+            }
           }
-          }
-
-         
         }
 
         .social-media-box-dark {

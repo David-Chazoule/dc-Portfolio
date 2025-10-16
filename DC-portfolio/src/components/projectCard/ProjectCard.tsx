@@ -28,7 +28,11 @@ function ProjectCard({ project, onClick }: Props) {
 
   return (
     <div className={`card-container  ${theme === "light" ? "" : "cardDark"}`}>
-      <img className={` ${theme==='light'?'':'img-dark'}`} src={`/img/${project.img}.gif`} alt={project.img + `image`} />
+      <img
+        className={` ${theme === "light" ? "" : "img-dark"}`}
+        src={`/img/${project.img}.gif`}
+        alt={project.img + `image`}
+      />
       <div className="detail-card">
         <p className={`title-card ${theme === "light" ? "" : "titleDark"}`}>
           {language === "fr" ? project.titleFr : project.titleEn}
