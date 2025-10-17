@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 20vh;
+  min-height: 20vh;
+  height: auto;
   align-items: center;
   background-color: rgb(187, 187, 230);
   font-family: $fonttwo;

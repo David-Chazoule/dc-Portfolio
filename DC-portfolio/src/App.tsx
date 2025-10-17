@@ -7,20 +7,24 @@ import Introduction from "./components/introduction/Introduction";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
+import { useViewportHeight } from "./hook/useViewportHeight";
 
 function App() {
+
+  useViewportHeight();
+
   return (
     <div className="app">
       <Header />
-      <section id="home">
+      <section className="fullscreen" id="home">
         {" "}
         <Introduction />
       </section>
-      <section id="about">
+      <section className="fullscreen" id="about">
         {" "}
         <About />
       </section>
-      <section id="skills">
+      <section className="fullscreen" id="skills">
         <Skills />
       </section>
       <section id="projects">
