@@ -30,6 +30,7 @@
   width: 100vw;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,11 +96,13 @@
           align-items: center;
           justify-content: center;
           margin: 0 0 20px 0;
+   
 
           .icon-techno {
             width: 50px;
             height: auto;
             margin: 8px 16px;
+        filter: drop-shadow(0 4px 10px rgba(83, 79, 79, 0.6));
           }
           .icon-techno-dark {
             color: white;

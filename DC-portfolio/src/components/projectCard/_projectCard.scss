@@ -56,15 +56,21 @@
     }
 
     .information-design {
+      padding: 8px 20px;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #6c63ff, #4e00c2);
+      box-shadow: 0 0 10px rgba(108, 99, 255, 0.6);
+      transition: all 0.3s ease;
+      font-family: $fonttwo;
       font-size: 14px;
-      width: 100%;
-      margin: 60px 0 0 0;
-      color: $btnLight;
+      margin-top: 6vh;
       cursor: pointer;
-      font-weight: 700;
 
       &:hover {
-        color: rgb(96, 96, 163);
+        box-shadow: 0 0 20px rgba(108, 99, 255, 1);
+        transform: translateY(-3px);
       }
     }
     .information-design-dark {
