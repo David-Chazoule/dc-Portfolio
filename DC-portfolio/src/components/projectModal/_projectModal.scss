@@ -39,7 +39,7 @@
 
   .modal-content {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 26px;
     max-width: 600px;
     width: 90%;
     padding: 0 20px 20px 20px;
@@ -55,7 +55,7 @@
     img {
       width: 600px;
       height: auto;
-      border-radius: 6px;
+      border-radius: 26px 26px 0 0;
       border: rgba(142, 142, 222, 0.6) solid 1px;
     }
 
@@ -96,13 +96,12 @@
           align-items: center;
           justify-content: center;
           margin: 0 0 20px 0;
-   
 
           .icon-techno {
             width: 50px;
             height: auto;
             margin: 8px 16px;
-        filter: drop-shadow(0 4px 10px rgba(83, 79, 79, 0.6));
+            filter: drop-shadow(0 4px 10px rgba(83, 79, 79, 0.6));
           }
           .icon-techno-dark {
             color: white;
@@ -118,20 +117,25 @@
         margin: 10px;
         a {
           button {
-            background-color: rgb(142, 142, 222);
-            color: white;
-            align-self: flex-end;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
+            padding: 12px 24px;
+            color: #fff;
             border: none;
-            width: 140px;
-            padding: 10px;
-            font-weight: 700;
-            font-size: 16px;
+            border-radius: 8px;
+            background: linear-gradient(
+              106deg,
+              rgb(96, 96, 163),
+              rgb(142, 142, 222)
+            );
+            // box-shadow: 0 0 10px rgba(108, 99, 255, 0.6);
+            transition: all 0.3s ease;
+            font-family: $fonttwo;
+            font-size: 18px;
+            margin-top: 10px;
+            cursor: pointer;
 
             &:hover {
-              background-color: rgb(96, 96, 163);
+              box-shadow: 0 0 12px rgba(108, 99, 255, 1);
+              transform: translateY(-3px);
             }
           }
 
