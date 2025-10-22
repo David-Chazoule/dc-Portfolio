@@ -10,12 +10,12 @@
   justify-content: center;
   font-family: $fonttwo;
 
-  @media screen and (max-width: 1024px) {
-    min-height: auto;
-    height: auto;
-    padding: 100px 0 0 0;
-    justify-content: flex-start;
-  }
+  // @media screen and (max-width: 1024px) {
+  //   min-height: auto;
+  //   height: auto;
+  //   padding: 100px 0 0 0;
+  //   justify-content: flex-start;
+  // }
 
   &.light {
     background-color: $themeLightPrimaire;
@@ -37,6 +37,10 @@
     margin: 10px;
     color: $txtLight;
     font-weight: 700;
+
+    @media screen and (max-width: 660px) {
+      font-size: 26px;
+    }
   }
   .darkWrite {
     color: rgb(225, 219, 219);
@@ -44,23 +48,37 @@
 
   .img-about-container {
     display: flex;
+    flex-direction: column;
     max-width: 600px;
     margin-top: 4vh;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 660px) {
+      max-width: 400px;
+    }
+
     img {
       width: 500px;
       height: 516px;
       border-radius: 60px;
       filter: grayscale(0.6) contrast(1.05) brightness(1.1);
-
       transition: all 0.3s ease;
+
+      @media screen and (max-width: 660px) {
+        width: 300px;
+        height: 320px;
+      }
     }
 
     .presentation {
       display: flex;
       flex-direction: column;
       margin: 20px;
+
+      @media screen and (max-width: 660px) {
+        align-items: center;
+      }
 
       .competence-box {
         display: flex;
@@ -79,15 +97,29 @@
           text-align: center;
           border-radius: 20px;
 
+          @media screen and (max-width: 660px) {
+            width: 80px;
+            margin: 10px;
+          }
+
           .icon-competence {
             width: 24px;
             height: auto;
             margin-bottom: 10px;
+
+            @media screen and (max-width: 660px) {
+              width: 20px;
+              margin-bottom: 6px;
+            }
           }
 
           .icon-label {
             color: black;
             font-weight: 600;
+
+            @media screen and (max-width: 660px) {
+              font-size: 12px;
+            }
           }
 
           .iconLight {
@@ -113,6 +145,11 @@
         p {
           letter-spacing: 1px;
           margin-left: 10px;
+
+          @media screen and (max-width: 660px) {
+            margin: 0;
+            text-align: center;
+          }
         }
       }
     }
