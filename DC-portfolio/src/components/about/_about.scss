@@ -48,7 +48,7 @@
 
   .img-about-container {
     display: flex;
-    flex-direction: column;
+    
     max-width: 600px;
     margin-top: 4vh;
     justify-content: center;
@@ -56,6 +56,7 @@
 
     @media screen and (max-width: 660px) {
       max-width: 400px;
+      flex-direction: column;
     }
 
     img {

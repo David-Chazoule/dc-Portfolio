@@ -12,12 +12,12 @@
   transition: background-color 0.4s ease, color 0.4s ease;
   font-family: $fonttwo;
 
-  @media screen and (max-width: 1024px) {
-    min-height: auto;
-    height: auto;
-    padding: 100px 0 0 0;
-    justify-content: flex-start;
-  }
+  // @media screen and (max-width: 1024px) {
+  //   min-height: auto;
+  //   height: auto;
+  //   padding: 100px 0 0 0;
+  //   justify-content: flex-start;
+  // }
 
   &.light {
     background-color: $themeLightPrimaire;
@@ -49,6 +49,10 @@
     justify-content: center;
     flex-direction: column;
 
+    @media screen and (max-width: 660px) {
+      width: 300px;
+    }
+
     .skill-dev,
     .skill-tools {
       display: flex;
@@ -59,6 +63,10 @@
       background-color: white;
       padding: 10px;
       margin-top: 2vh;
+
+      @media screen and (max-width: 660px) {
+        width: 340px;
+      }
 
       h3 {
         font-weight: 700;
@@ -92,6 +100,10 @@
       .skill-icon {
         width: 34px;
         height: auto;
+
+        @media screen and (max-width: 660px) {
+          width: 24px;
+        }
       }
 
       .iconLight {
@@ -110,6 +122,10 @@
         h4 {
           margin: 0;
           font-size: 1.1rem;
+
+          @media screen and (max-width: 660px) {
+            font-size: 0.9em;
+          }
         }
 
         .titleTechoDark {
@@ -118,11 +134,15 @@
 
         p {
           margin: 0;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           opacity: 0.8;
           color: $textLightTwo;
           font-weight: 600;
           font-style: italic;
+
+          @media screen and (max-width: 660px) {
+            font-size: 0.6rem;
+          }
         }
 
         .levelTechoDark {
