@@ -14,7 +14,7 @@ function About() {
   return (
     <div className={`about-container ${theme}`}>
       <h3 className={theme === "light" ? "" : "darkWrite"}>
-        {language === "fr" ? "Présentation" : "Presentation"}
+        {language === "fr" ? "PRESENTATION" : "PRESENTATION"}
       </h3>
       <h1 className={theme === "light" ? "" : "darkWrite"}>
         {language === "fr" ? aboutData.titleFr : aboutData.titleEn}

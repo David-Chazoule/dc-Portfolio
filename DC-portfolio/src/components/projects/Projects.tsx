@@ -15,7 +15,7 @@ function Projects() {
   return (
     <div className={`projects-container ${theme}`}>
       <h3 className={theme === "light" ? "" : "darkWrite"}>
-        {language == "fr" ? "Projets" : "Projects"}
+        {language == "fr" ? "PROJETS" : "PROJECTS"}
       </h3>
       <h1 className={theme === "light" ? "" : "darkWrite"}>
         {language == "fr" ? "Mon Portfolio" : "My Portfolio"}

@@ -15,7 +15,7 @@ function Skills() {
   return (
     <div className={`skills-container ${theme}`}>
       <h3 className={` titleSkills ${theme === "light" ? "" : "darkWrite"}`}>
-        {language === "fr" ? "Stack technique" : "Tech stack"}
+        {language === "fr" ? "STACK TECHNIQUE" : "TECH STACK"}
       </h3>
       <h1 className={theme === "light" ? "" : "darkWrite"}>
         {language === "fr" ? "Mes compétences" : "My skills"}
