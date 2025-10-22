@@ -57,53 +57,58 @@ function ProjectModal({ project, onClose }: Props) {
           </p>
 
           <div className="techno-container">
-            <p className={theme === "light" ? "" : "darkWrite"}>
-              {language === "fr" ? "Techno utilisées" : "Techno used"}
-            </p>
+            <div className="link-container">
+              {project.github === true ? (
+                <a href={project.githubLink}>
+                  <button className={` ${theme === "light" ? "" : "btnDark"}`}>
+                    GitHub
+                  </button>
+                </a>
+              ) : (
+                ""
+              )}
+
+              {project.git === true ? (
+                <a href={project.githubLinkTwo}>
+                  <button className={` ${theme === "light" ? "" : "btnDark"}`}>
+                    GitHub back-end
+                  </button>
+                </a>
+              ) : (
+                ""
+              )}
+              {project.live === true ? (
+                <a href={project.liveLink}>
+                  <button className={` ${theme === "light" ? "" : "btnDark"}`}>
+                    Live
+                  </button>
+                </a>
+              ) : (
+                ""
+              )}
+            </div>
+
             <div className="techno-icons">
-              {project.icon.map((IconComponent, index) => {
-                return (
-                  <IconComponent
-                    key={index}
-                    className={`icon-techno ${
-                      theme === "light" ? "" : "icon-techno-dark"
-                    }`}
-                  />
-                );
-              })}
+              <div>
+                <p className={theme === "light" ? "" : "darkWrite"}>
+                  {language === "fr" ? "Techno utilisées" : "Techno used"}
+                </p>
+              </div>
+              <div className="icon-container">
+                {project.icon.map((IconComponent, index) => {
+                  return (
+                    <IconComponent
+                      key={index}
+                      className={`icon-techno ${
+                        theme === "light" ? "" : "icon-techno-dark"
+                      }`}
+                    />
+                  );
+                })}
+              </div>
             </div>
           </div>
 
-          <div className="link-container">
-            {project.github === true ? (
-              <a href={project.githubLink}>
-                <button className={` ${theme === "light" ? "" : "btnDark"}`}>
-                  GitHub
-                </button>
-              </a>
-            ) : (
-              ""
-            )}
-
-            {project.git === true ? (
-              <a href={project.githubLinkTwo}>
-                <button className={` ${theme === "light" ? "" : "btnDark"}`}>
-                  GitHub back-end
-                </button>
-              </a>
-            ) : (
-              ""
-            )}
-            {project.live === true ? (
-              <a href={project.liveLink}>
-                <button className={` ${theme === "light" ? "" : "btnDark"}`}>
-                  Live
-                </button>
-              </a>
-            ) : (
-              ""
-            )}
-          </div>
           <div
             className={` footer-modal ${
               theme === "light" ? "" : "footer-modalDark"

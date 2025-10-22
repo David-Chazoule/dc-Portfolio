@@ -80,70 +80,80 @@
       }
       .techno-container {
         display: flex;
-        flex-direction: column;
-        width: 100%;
+        width: 500px;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 20px;
 
-        p {
-          font-size: 16px;
-          font-weight: 800;
+        .link-container {
+          display: flex;
+          width: 50%;
+          height: 2vh;
+          align-items: flex-start;
+          flex-direction: column;
+          justify-content: center;
+
+          a {
+            button {
+              padding: 12px 24px;
+              width: 210px;
+              color: #fff;
+              border: none;
+              border-radius: 8px;
+              background: linear-gradient(
+                156deg,
+                rgba(142, 142, 222, 0.6),
+                rgba(142, 142, 222, 1)
+              );
+              transition: all 0.3s ease;
+              font-family: $fonttwo;
+              font-size: 18px;
+              margin-bottom: 10px;
+              cursor: pointer;
+
+              &:hover {
+                box-shadow: 0 0 12px rgba(108, 99, 255, 1);
+                transform: translateY(-3px);
+              }
+            }
+
+            .btnDark {
+              background: linear-gradient(
+                156deg,
+                rgba(142, 142, 222, 0.6),
+                rgba(98, 135, 255, 1)
+              );
+              &:hover {
+                box-shadow: 0 0 12px rgba(98, 135, 255, 1);
+                transform: translateY(-3px);
+              }
+            }
+          }
         }
+
         .techno-icons {
           display: flex;
-          width: 100%;
+          width: 50%;
+          height: 14vh;
+          flex-direction: column;
           align-items: center;
-          justify-content: center;
-          margin: 0 0 20px 0;
+          justify-content: flex-start;
+
+          p {
+            font-size: 16px;
+            font-weight: 800;
+            width: 200px;
+            color: rgba(142, 142, 222, 1);
+          }
 
           .icon-techno {
-            width: 50px;
+            width: 42px;
             height: auto;
-            margin: 8px 16px;
+            margin: 20px 10px;
             filter: drop-shadow(0 4px 10px rgba(83, 79, 79, 0.6));
           }
           .icon-techno-dark {
             color: white;
-          }
-        }
-      }
-
-      .link-container {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        margin: 10px;
-        a {
-          button {
-            padding: 12px 24px;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            background: linear-gradient(
-              106deg,
-              rgb(96, 96, 163),
-              rgb(142, 142, 222)
-            );
-            // box-shadow: 0 0 10px rgba(108, 99, 255, 0.6);
-            transition: all 0.3s ease;
-            font-family: $fonttwo;
-            font-size: 18px;
-            margin-top: 10px;
-            cursor: pointer;
-
-            &:hover {
-              box-shadow: 0 0 12px rgba(108, 99, 255, 1);
-              transform: translateY(-3px);
-            }
-          }
-
-          .btnDark {
-            background-color: $themeDarkSecondaire;
-            &:hover {
-              background-color: rgb(96, 96, 163);
-            }
           }
         }
       }
