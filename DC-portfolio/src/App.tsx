@@ -7,12 +7,8 @@ import Introduction from "./components/introduction/Introduction";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
-import { useViewportHeight } from "./hook/useViewportHeight";
 
 function App() {
-
-  useViewportHeight();
-
   return (
     <div className="app">
       <Header />

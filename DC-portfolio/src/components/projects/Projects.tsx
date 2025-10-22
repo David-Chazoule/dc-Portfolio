@@ -11,7 +11,7 @@ function Projects() {
   const { language } = useContext(LanguageContext);
   const [selectedProject, setSelectedProject] =
     useState<projectCardType | null>(null);
-  console.log("project list", project);
+  
   return (
     <div className={`projects-container ${theme}`}>
       <h3 className={theme === "light" ? "" : "darkWrite"}>
