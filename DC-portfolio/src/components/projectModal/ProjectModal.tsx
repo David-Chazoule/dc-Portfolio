@@ -90,7 +90,7 @@ function ProjectModal({ project, onClose }: Props) {
 
             <div className="techno-icons">
               <div>
-                <p className={theme === "light" ? "" : "darkWrite"}>
+                <p className={theme === "light" ? "" : "darkThemeTitle"}>
                   {language === "fr" ? "Techno utilisées" : "Techno used"}
                 </p>
               </div>
