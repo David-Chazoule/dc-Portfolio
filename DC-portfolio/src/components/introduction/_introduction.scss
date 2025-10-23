@@ -7,12 +7,16 @@
   min-height: 100vh;
   align-items: center;
   // justify-content: center;
- 
+
   transition: background-color 0.4s ease, color 0.4s ease;
   font-family: $fonttwo;
 
   @media screen and (max-width: 1024px) {
-   min-height: 20vh;
+    min-height: 84vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    min-height: 82vh;
   }
 
   &.light {
@@ -22,31 +26,33 @@
     background-color: $themeDarkPrimaire;
   }
 
-  .titleIntro{
+  .titleIntro {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 12vh;
- h3 {
-    margin-top:  2px ;
-    color: $textLightTwo;
-    font-weight: 500;
-    font-size: 14px;
+    @media screen and (max-width: 600px) {
+      margin-top: 16vh;
+    }
+    h3 {
+      margin-top: 2px;
+      color: $textLightTwo;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    h1 {
+      margin: 10px;
+      color: $txtLight;
+      font-weight: 700;
+    }
+
+    .darkWrite {
+      color: rgb(225, 219, 219);
+    }
   }
 
-  h1 {
-    margin: 10px;
-    color: $txtLight;
-    font-weight: 700;
-  }
-
-  .darkWrite {
-    color: rgb(225, 219, 219);
-  }
-    
-  }
- 
   .cv-about-container {
     display: flex;
     width: 600px;
@@ -170,7 +176,7 @@
         width: 440px;
 
         @media screen and (max-width: 660px) {
-          width: 240px;
+          width: 230px;
           margin: 0 5px;
         }
       }
