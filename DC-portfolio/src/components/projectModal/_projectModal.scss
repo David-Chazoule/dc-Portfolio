@@ -44,6 +44,7 @@
     width: 90%;
     padding: 0 20px 20px 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #fff, #f9f9ff);
     animation: fadeIn 0.3s ease-out;
     display: flex;
     flex-direction: column;
@@ -154,7 +155,7 @@
             width: 42px;
             height: auto;
             margin: 20px 10px;
-            filter: drop-shadow(0 4px 10px rgba(83, 79, 79, 0.6));
+            filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
           }
           .icon-techno-dark {
             color: white;

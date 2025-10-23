@@ -21,8 +21,15 @@
   &.dark {
     background-color: $themeDarkPrimaire;
   }
-  h3 {
-    margin: 3px;
+
+  .titleIntro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vh;
+ h3 {
+    margin-top:  2px ;
     color: $textLightTwo;
     font-weight: 500;
     font-size: 14px;
@@ -37,14 +44,17 @@
   .darkWrite {
     color: rgb(225, 219, 219);
   }
+    
+  }
+ 
   .cv-about-container {
     display: flex;
-    max-width: 600px;
+    width: 600px;
     align-items: center;
     justify-content: space-around;
     margin: 30px 0;
     @media screen and (max-width: 660px) {
-      max-width: 400px;
+      width: 400px;
     }
 
     .cv-style {

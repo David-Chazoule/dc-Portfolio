@@ -20,11 +20,15 @@ function Introduction() {
 
   return (
     <div className={`introduction-container ${theme}`}>
-      <h3 className={theme === "light" ? "" : "darkWrite"}>
-        {language === "fr" ? "Hello, je suis" : "Hello, i'am"}
-      </h3>
-      <h1 className={theme === "light" ? "" : "darkWrite"}>David Chazoule</h1>
-      <h3 className={theme === "light" ? "" : "darkWrite"}>Développeur web </h3>
+      <div className="titleIntro">
+        <h3 className={theme === "light" ? "" : "darkWrite"}>
+          {language === "fr" ? "Hello, je suis" : "Hello, i'am"}
+        </h3>
+        <h1 className={theme === "light" ? "" : "darkWrite"}>David Chazoule</h1>
+        <h3 className={theme === "light" ? "" : "darkWrite"}>
+          Développeur web{" "}
+        </h3>
+      </div>
       <div className="cv-about-container">
         <button
           className={`cv-style ${theme === "light" ? "cvLight" : "cvDark"}`}
