@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 420px) {
+    width: 90%;
+  }
+
   .list-nav {
     display: flex;
     border-radius: 4em;

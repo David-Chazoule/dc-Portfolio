@@ -23,6 +23,10 @@
   h1 {
     font-weight: 700;
     margin: 4px 10px 0px 10px;
+    @media screen and (max-width: 420px) {
+      margin: 2px 4px 0px 4px;
+      font-size: 26px;
+    }
   }
 
   h3 {
@@ -32,6 +36,10 @@
 
     @media screen and (max-width: 1024px) {
       margin: 8vh 0 1vh 0;
+    }
+
+    @media screen and (max-width: 420px) {
+      margin: 2vh 0 0 0;
     }
   }
 
@@ -51,6 +59,10 @@
       height: auto;
       padding: 0 0 0 0;
       justify-content: center;
+    }
+
+    @media screen and (max-width: 420px) {
+      margin: 10px 0;
     }
   }
 }

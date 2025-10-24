@@ -10,6 +10,11 @@
   justify-content: center;
   transition: background-color 0.4s ease, color 0.4s ease;
   font-family: $fonttwo;
+
+  @media screen and (max-width: 420px) {
+    margin-right: 0;
+  }
+
   &.light {
     background-color: $themeLightPrimaire;
   }
@@ -89,6 +94,10 @@
         align-items: center;
         width: 300px;
         margin-right: 40px;
+
+        @media screen and (max-width: 420px) {
+          margin-right: 0;
+        }
 
         div {
           position: relative;

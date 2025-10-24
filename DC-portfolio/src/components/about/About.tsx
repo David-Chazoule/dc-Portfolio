@@ -13,7 +13,7 @@ function About() {
 
   return (
     <div className={`about-container ${theme}`}>
-      <h3 className={theme === "light" ? "" : "darkWrite"}>
+      <h3 className={`smallTitle ${theme === "light" ? "" : "darkWrite"}`}>
         {language === "fr" ? "PRESENTATION" : "PRESENTATION"}
       </h3>
       <h1 className={theme === "light" ? "" : "darkWrite"}>

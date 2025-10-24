@@ -18,6 +18,10 @@
     width: 300px;
   }
 
+  @media screen and (max-width: 420px) {
+    width: 260px;
+  }
+
   &:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
@@ -37,6 +41,10 @@
     @media screen and (max-width: 1025px) {
       height: 140px;
     }
+
+    @media screen and (max-width: 420px) {
+      height: 120px;
+    }
   }
 
   .img-dark {
@@ -52,6 +60,12 @@
     margin-left: 14px;
     text-align: start;
 
+    @media screen and (max-width: 420px) {
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+    }
+
     .title-card {
       font-size: 20px;
       font-weight: 700;
@@ -60,6 +74,10 @@
 
       @media screen and (max-width: 1025px) {
         font-size: 16px;
+      }
+
+      @media screen and (max-width: 420px) {
+        font-size: 14px;
       }
     }
 
@@ -77,7 +95,6 @@
         rgba(142, 142, 222, 0.6),
         rgba(142, 142, 222, 1)
       );
-
       transition: all 0.3s ease;
       font-family: $fonttwo;
       font-size: 14px;
@@ -87,6 +104,12 @@
       &:hover {
         box-shadow: 0 0 12px rgba(108, 99, 255, 1);
         transform: translateY(-3px);
+      }
+
+      @media screen and (max-width: 420px) {
+        padding: 6px 12px;
+        font-size: 12px;
+        margin-top: 4vh;
       }
     }
     .information-design-dark {
