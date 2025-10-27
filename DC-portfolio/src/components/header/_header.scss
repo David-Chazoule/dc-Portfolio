@@ -12,11 +12,16 @@
   justify-content: center;
   transition: background-color 0.4s ease, color 0.4s ease;
 
+
   .header-box {
     display: flex;
     width: 620px;
     align-items: center;
     justify-content: space-around;
+
+    @media screen and (max-width: 600px) {
+         width: 350px;
+        }
 
     .settings {
       display: flex;

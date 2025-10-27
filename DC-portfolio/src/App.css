@@ -6,13 +6,13 @@
   justify-content: center;
 }
 
-/* .fullscreen {
+html,
+body {
   width: 100%;
-  min-height: calc(var(--vh, 1vh) * 100);
-  display: flex;
-  
-} */
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
 
-section{
+section {
   width: 100%;
 }

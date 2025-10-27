@@ -11,6 +11,11 @@
   transition: background-color 0.4s ease, color 0.4s ease;
   font-family: $fonttwo;
 
+  @media screen and (max-width: 600px) {
+    margin-right: 0;
+    min-height: 84vh;
+  }
+
   @media screen and (max-width: 420px) {
     margin-right: 0;
   }
@@ -25,6 +30,11 @@
   h1 {
     margin: 0 0 30px 0;
     color: $txtLight;
+
+    @media screen and (max-width: 600px) {
+      margin: 3vh 0 6px 0;
+      font-size: 26px;
+    }
   }
 
   .darkWrite {
@@ -37,11 +47,19 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (max-width: 600px) {
+      justify-content: center;
+    }
+
     h2 {
       margin-bottom: 20px;
       color: $textLightTwo;
       font-size: 16px;
       font-weight: 500;
+
+      @media screen and (max-width: 600px) {
+        font-size: 14px;
+      }
     }
     .darkWrite {
       color: white;
@@ -50,12 +68,23 @@
       display: flex;
       align-items: center;
 
+      @media screen and (max-width: 600px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+      }
+
       .contacts-box {
         display: flex;
         flex-direction: column;
         background-color: $themeLightPrimaire;
         margin-right: 10px;
         align-items: center;
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+          margin-right: 0;
+          justify-content: center;
+        }
 
         .social-media-box {
           display: flex;
@@ -64,15 +93,30 @@
           justify-content: flex-end;
           width: 100%;
           height: 280px;
+
+          @media screen and (max-width: 600px) {
+            flex-direction: row;
+            margin-top: 30px;
+            justify-content: space-around;
+            align-items: center;
+            height: auto;
+          }
           a {
             text-decoration: none;
             color: inherit;
+
             .icon-social {
               width: 40px;
               height: auto;
               margin-top: 16px;
               cursor: pointer;
               color: $btnLight;
+
+              @media screen and (max-width: 600px) {
+                margin: 6px;
+                width: 30px;
+              }
+
               &:hover {
                 transform: scale(1.2);
               }
@@ -95,7 +139,9 @@
         width: 300px;
         margin-right: 40px;
 
-        @media screen and (max-width: 420px) {
+        @media screen and (max-width: 600px) {
+          width: 200px;
+          justify-content: center;
           margin-right: 0;
         }
 
@@ -110,6 +156,10 @@
             top: -6px;
             font-size: 18px;
             padding: 4px 8px;
+            @media screen and (max-width: 600px) {
+              font-size: 14px;
+              top: -2px;
+            }
           }
 
           .label-dark {
@@ -125,6 +175,10 @@
             border-radius: 15px;
             background-color: $themeLightPrimaire;
             margin: 10px 0;
+
+            @media screen and (max-width: 600px) {
+              width: 200px;
+            }
           }
 
           .input-dark {
@@ -140,6 +194,10 @@
             border: 3px solid $btnLight;
             padding: 10px;
             border-radius: 15px;
+            @media screen and (max-width: 600px) {
+              width: 200px;
+              height: 100px;
+            }
           }
 
           .textarea-dark {
@@ -159,6 +217,10 @@
           margin-top: 2em;
           font-weight: 700;
           font-size: 16px;
+
+          @media screen and (max-width: 600px) {
+            margin-top: 0.5em;
+          }
 
           &:hover {
             background-color: rgb(96, 96, 163);
