@@ -30,11 +30,10 @@
   width: 100vw;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(2px);
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(2px);
   font-family: $fonttwo;
 
   .modal-content {
@@ -45,7 +44,6 @@
     padding: 0 20px 20px 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     background: linear-gradient(to bottom, #fff, #f9f9ff);
-    animation: fadeIn 0.3s ease-out;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,10 +72,12 @@
       width: 100%;
       align-items: center;
       text-align: center;
+
       h1 {
         margin: 4px 0 10px 0;
         font-size: 28px;
       }
+
       p {
         width: 500px;
         font-size: 16px;
@@ -92,6 +92,7 @@
       .darkWrite {
         color: white;
       }
+
       .techno-container {
         display: flex;
         width: 500px;
@@ -115,6 +116,7 @@
           @media screen and (max-width: 600px) {
             height: 1vh;
           }
+
           a {
             button {
               padding: 12px 24px;
@@ -167,6 +169,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
+
           @media screen and (max-width: 600px) {
             width: 60%;
           }
@@ -193,6 +196,7 @@
               margin: 20px 6px;
             }
           }
+
           .icon-techno-dark {
             color: white;
           }
@@ -227,8 +231,18 @@
     }
   }
 
-  .modal-content-dark {
-    background-color: $themeDarkTerciaire;
+  .modal-content.modal-content-dark {
+    background-color: black !important;
+    background: linear-gradient(to bottom, #000, #0c0c0f);
+
+    .footer-modal {
+      border-top: 2px solid white;
+    }
+
+    h1,
+    p {
+      color: white;
+    }
   }
 
   .fade-in {
