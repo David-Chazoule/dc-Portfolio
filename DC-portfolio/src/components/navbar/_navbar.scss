@@ -8,8 +8,17 @@
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 420px) {
-    width: 90%;
+  @media screen and (max-width: 600px) {
+    bottom: auto;
+    top: 0;
+    height: 100%;
+    right: 0.5rem;
+    width: auto;
+    left: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 2rem;
   }
 
   .list-nav {
@@ -31,7 +40,9 @@
     }
 
     @media screen and (max-width: 600px) {
-      width: 300px;
+      width: 50px;
+      flex-direction: column;
+      padding: 2px;
     }
 
     li {
@@ -51,8 +62,8 @@
         background-color: transparent;
 
         @media screen and (max-width: 600px) {
-          width: 40px;
-          height: 40px;
+          width: 30px;
+          height: 30px;
         }
 
         .nav-icon {
