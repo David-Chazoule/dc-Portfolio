@@ -71,7 +71,7 @@
       margin-top: 1vh;
     }
 
-    img {
+    .picturePC {
       width: 500px;
       height: 516px;
       border-radius: 60px;
@@ -79,8 +79,19 @@
       transition: all 0.3s ease;
 
       @media screen and (max-width: 660px) {
-        width: 200px;
-        height: 220px;
+        display: none;
+      }
+    }
+    .pictureMobile {
+      display: none;
+
+      @media screen and (max-width: 660px) {
+        display: block;
+        width: 300px;
+        height: 240px;
+        border-radius: 20px;
+        filter: grayscale(0.6) contrast(1.05) brightness(1.1);
+        transition: all 0.3s ease;
       }
     }
 

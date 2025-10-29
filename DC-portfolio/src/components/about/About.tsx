@@ -3,6 +3,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { aboutData } from "../../data/data.ts";
 import photo from "./img/profilePicture.jpg";
+import photoTwo from "./img/pictureTwo.jpg";
 import { FaPalette } from "react-icons/fa";
 import { GiCompass } from "react-icons/gi";
 import { MdAutorenew } from "react-icons/md";
@@ -20,7 +21,8 @@ function About() {
         {language === "fr" ? aboutData.titleFr : aboutData.titleEn}
       </h1>
       <div className="img-about-container">
-        <img src={photo} alt="photo-moi" />
+        <img className="picturePC" src={photo} alt="photo-DC" />
+        <img className="pictureMobile" src={photoTwo} alt="photo-DC" />
         <div className="presentation">
           <div className="competence-box">
             <div
