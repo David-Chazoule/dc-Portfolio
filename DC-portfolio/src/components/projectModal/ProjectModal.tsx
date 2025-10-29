@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import type { IconType } from "react-icons";
@@ -28,6 +28,18 @@ function ProjectModal({ project, onClose }: Props) {
   const [closing, setClosing] = useState(false);
   const { theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
+
+  useEffect(() => {
+    if (project) {
+      document.body.classList.add("body-no-scroll");
+    } else {
+      document.body.classList.remove("body-no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("body-no-scroll");
+    };
+  }, [project]);
 
   if (!project) return null;
 
