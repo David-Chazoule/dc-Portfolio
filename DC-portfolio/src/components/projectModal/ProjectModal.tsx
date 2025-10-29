@@ -31,16 +31,37 @@ function ProjectModal({ project, onClose }: Props) {
 
   useEffect(() => {
     if (project) {
-      document.body.classList.add("body-no-scroll");
+      const scrollY = window.scrollY;
+
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = "100%";
+
+      document.body.dataset.savedScroll = scrollY.toString();
     } else {
-      document.body.classList.remove("body-no-scroll");
+      const savedScroll = document.body.dataset.savedScroll;
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+
+      if (savedScroll) {
+        window.scrollTo(0, parseInt(savedScroll));
+      }
     }
 
     return () => {
-      document.body.classList.remove("body-no-scroll");
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      const savedScroll = document.body.dataset.savedScroll;
+      if (savedScroll) {
+        window.scrollTo(0, parseInt(savedScroll));
+      }
     };
   }, [project]);
-
   if (!project) return null;
 
   const handleClose = () => {
