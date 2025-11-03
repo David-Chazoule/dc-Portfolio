@@ -16,8 +16,12 @@
 }
 
 .logoBtn {
-  width: 22px;
+  width: 30px;
   margin-bottom: 2px;
+
+  @media screen and (max-width: 600px) {
+    width: 18px;
+  }
 }
 
 .button_containerLight {

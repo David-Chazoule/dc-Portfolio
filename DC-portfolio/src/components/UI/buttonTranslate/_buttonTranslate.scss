@@ -1,8 +1,11 @@
-.translate-container{
-
-  .flag{
-    width: 30px;
+.translate-container {
+  .flag {
+    width: 36px;
     border: 1px solid white;
     cursor: pointer;
+
+    @media screen and (max-width: 600px) {
+      width: 24px;
+    }
   }
 }
