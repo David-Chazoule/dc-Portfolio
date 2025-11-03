@@ -72,8 +72,8 @@
     }
 
     .picturePC {
-      width: 500px;
-      height: 516px;
+      width: 400px;
+      height: 440px;
       border-radius: 60px;
       filter: grayscale(0.6) contrast(1.05) brightness(1.1);
       transition: all 0.3s ease;
@@ -128,7 +128,11 @@
           align-items: center;
           justify-content: center;
           flex-direction: column;
-          background-color: $btnLight;
+          background: linear-gradient(
+            6deg,
+            rgba(142, 142, 222, 0.6),
+            rgba(142, 142, 222, 1)
+          );
           margin: 4px;
           padding: 10px;
           text-align: center;
@@ -159,7 +163,7 @@
 
           .icon-label {
             color: black;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 14px;
 
             @media screen and (max-width: 660px) {
@@ -176,7 +180,11 @@
         }
 
         .competenceDark {
-          background-color: $themeDarkSecondaire;
+          background: linear-gradient(
+            156deg,
+            rgba(142, 142, 222, 0.6),
+            rgba(98, 135, 255, 1)
+          );
         }
       }
 

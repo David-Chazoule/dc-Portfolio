@@ -62,7 +62,7 @@
       }
     }
     .darkWrite {
-     color: rgb(225, 219, 219);
+      color: rgb(225, 219, 219);
     }
     .allContacts-container {
       display: flex;
@@ -100,7 +100,6 @@
             justify-content: space-around;
             align-items: center;
             height: auto;
-            
           }
           a {
             text-decoration: none;
@@ -231,6 +230,12 @@
 
         .btnDark {
           background-color: $themeDarkSecondaire;
+
+          &:hover {
+            background-color: rgb(90, 116, 203);
+            box-shadow: 0 0 12px rgb(102, 135, 241);
+            transform: translateY(-3px);
+          }
         }
       }
     }
