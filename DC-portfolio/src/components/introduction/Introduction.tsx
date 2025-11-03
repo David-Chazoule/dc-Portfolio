@@ -26,7 +26,7 @@ function Introduction() {
         </h3>
         <h1 className={theme === "light" ? "" : "darkWrite"}>David Chazoule</h1>
         <h3 className={theme === "light" ? "" : "darkWrite"}>
-          Développeur web{" "}
+          {language === "fr" ? "Développeur web" : "web developer"}
         </h3>
       </div>
       <div className="cv-about-container">
