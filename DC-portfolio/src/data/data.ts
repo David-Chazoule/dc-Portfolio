@@ -42,7 +42,7 @@ export const navbar: navbarType[] = [
   },
   {
     id: "about",
-    menuFr: "A PROPOS",
+    menuFr: "À PROPOS",
     menuEn: "ABOUT",
     target: "about",
     icon: FaUser,
@@ -86,7 +86,7 @@ export const homeData = {
 /* about data */
 
 export const aboutData: AboutDataType = {
-  titleFr: "A propos de moi",
+  titleFr: "À propos de moi",
   titleEn: "About me",
   aboutTxtFr:
     "Après de nombreuses années d'exercice dans le secteur de la vente, j’ai pris la décision d’effectuer une reconversion dans le domaine du développement web. J’ai pour cela intégré la formation de la Wild Code School de Mars 2021 à Aout 2021 en développement web et mobile (ReactJS / NodeJS) J'ai obtenu mon titre professionnel développeur web et d'application mobile en Octobre 2022.",

@@ -18,7 +18,7 @@ function Footer() {
       <h1>{language === "fr" ? "Par" : "By"} David</h1>
       <div className="nav">
         <h2 onClick={() => scrollTo("about")}>
-          {language === "fr" ? "A propos" : "About"}
+          {language === "fr" ? "À propos" : "About"}
         </h2>
         <h2 onClick={() => scrollTo("projects")}>Portfolio</h2>
       </div>
