@@ -14,16 +14,30 @@ function Footer() {
   };
 
   return (
-    <div className="footer-container">
-      <h1>{language === "fr" ? "Par" : "By"} David</h1>
+    <div
+      className={`footer-container ${theme === "light" ? "" : "footerDark"}`}
+    >
+      <h1 className={`byTitle ${theme === "light" ? "" : "byTitleDark"}`}>
+        {language === "fr" ? "Par" : "By"} David
+      </h1>
       <div className="nav">
-        <h2 onClick={() => scrollTo("about")}>
+        <h2
+          className={`navTitle ${theme === "light" ? "" : "navTitleDark"}`}
+          onClick={() => scrollTo("about")}
+        >
           {language === "fr" ? "À propos" : "About"}
         </h2>
-        <h2 onClick={() => scrollTo("projects")}>Portfolio</h2>
+        <h2
+          className={`navTitle ${theme === "light" ? "" : "navTitleDark"}`}
+          onClick={() => scrollTo("projects")}
+        >
+          Portfolio
+        </h2>
       </div>
       <div className="copyRight">
-        <p>David.com. All Rights reserved</p>
+        <p className={theme === "light" ? "" : "pDark"}>
+          David.com. All Rights reserved
+        </p>
       </div>
     </div>
   );
