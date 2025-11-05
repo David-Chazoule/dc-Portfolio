@@ -6,6 +6,7 @@ import { BsMouse } from "react-icons/bs";
 import Lottie from "lottie-react";
 import animationLight from "../../styles/animation/Developmentandcoding.json";
 import animationDark from "../../styles/animation/animationDark.json";
+import { motion } from "framer-motion";
 
 function Introduction() {
   const { theme } = useContext(ThemeContext);
@@ -20,7 +21,7 @@ function Introduction() {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/CVDavidChazoule.pdf"; 
+    link.href = "/CVDavidChazoule.pdf";
     link.download = "CV-DavidChazoule.pdf";
     document.body.appendChild(link);
     link.click();
@@ -29,7 +30,12 @@ function Introduction() {
 
   return (
     <div className={`introduction-container ${theme}`}>
-      <div className="titleIntro">
+      <motion.div
+        className="titleIntro"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
         <h3 className={theme === "light" ? "" : "darkWrite"}>
           {language === "fr" ? "Hello, je suis" : "Hello, i'am"}
         </h3>
@@ -37,8 +43,13 @@ function Introduction() {
         <h3 className={theme === "light" ? "" : "darkWrite"}>
           {language === "fr" ? "Développeur web" : "web developer"}
         </h3>
-      </div>
-      <div className="cv-about-container">
+      </motion.div>
+      <motion.div
+        className="cv-about-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
         <button
           className={`cv-style ${theme === "light" ? "cvLight" : "cvDark"}`}
           onClick={handleDownloadCV}
@@ -53,8 +64,13 @@ function Introduction() {
         >
           {language === "fr" ? "A propos de moi" : "About me"}
         </button>
-      </div>
-      <div className="container-img">
+      </motion.div>
+      <motion.div
+        className="container-img"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
         <div className="left-box">
           <a href="https://www.linkedin.com/in/david-chazoule/">
             <FaLinkedin
@@ -86,7 +102,7 @@ function Introduction() {
             Scroll Down
           </span>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
