@@ -2,6 +2,7 @@ import { useContext, useRef } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -31,17 +32,32 @@ function Contact() {
 
   return (
     <div className={`contact-container ${theme}`}>
-      <h1 className={theme === "light" ? "" : "darkWrite"}>
+      <motion.h1
+        className={theme === "light" ? "" : "darkWrite"}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
         {language === "fr" ? "Contactez moi" : "Contact me"}
-      </h1>
+      </motion.h1>
       <div className="contact-card">
-        <h2 className={theme === "light" ? "" : "darkWrite"}>
+        <motion.h2
+          className={theme === "light" ? "" : "darkWrite"}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
           {language === "fr"
             ? "Un petit message pour en savoir plus ?"
             : "A little message to find out more ?"}
-        </h2>
+        </motion.h2>
         <div className="allContacts-container">
-          <div className="contacts-box">
+          <motion.div
+            className="contacts-box"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 2 }}
+          >
             <div
               className={` social-media-box ${
                 theme === "light" ? "" : "social-media-box-dark"
@@ -62,8 +78,14 @@ function Contact() {
                 />
               </a>
             </div>
-          </div>
-          <form ref={form} onSubmit={sendEmail}>
+          </motion.div>
+          <motion.form
+            ref={form}
+            onSubmit={sendEmail}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 2 }}
+          >
             <div>
               <label
                 className={`label ${theme === "light" ? "" : "label-dark"}`}
@@ -119,7 +141,7 @@ function Contact() {
             >
               {language === "fr" ? "Envoyez" : "Send"}
             </button>
-          </form>
+          </motion.form>
         </div>
       </div>
     </div>
