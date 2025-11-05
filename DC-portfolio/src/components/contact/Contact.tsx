@@ -13,7 +13,7 @@ function Contact() {
     if (!form.current) return;
     emailjs
       .sendForm(
-        "service_wt9aw4k",
+        "service_hmzbkuw",
         "template_0mh4nso",
         form.current,
         "t8uciT4BW5C9SZHxh"

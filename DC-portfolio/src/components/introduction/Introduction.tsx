@@ -18,6 +18,15 @@ function Introduction() {
     }
   };
 
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/CVDavidChazoule.pdf"; 
+    link.download = "CV-DavidChazoule.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className={`introduction-container ${theme}`}>
       <div className="titleIntro">
@@ -32,6 +41,7 @@ function Introduction() {
       <div className="cv-about-container">
         <button
           className={`cv-style ${theme === "light" ? "cvLight" : "cvDark"}`}
+          onClick={handleDownloadCV}
         >
           {language === "fr" ? "Télécharger mon CV" : "download my CV"}
         </button>
