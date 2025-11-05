@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { MySkills, MyTools } from "../../data/data";
+import { motion } from "framer-motion";
 
 declare module "react-icons" {
   interface IconBaseProps {
@@ -14,16 +15,29 @@ function Skills() {
   const { language } = useContext(LanguageContext);
   return (
     <div className={`skills-container ${theme}`}>
-      <h3 className={` titleSkills ${theme === "light" ? "" : "darkWrite"}`}>
+      <motion.h3
+        className={` titleSkills ${theme === "light" ? "" : "darkWrite"}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
         {language === "fr" ? "STACK TECHNIQUE" : "TECH STACK"}
-      </h3>
-      <h1 className={theme === "light" ? "" : "darkWrite"}>
+      </motion.h3>
+      <motion.h1
+        className={theme === "light" ? "" : "darkWrite"}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
         {language === "fr" ? "Mes compétences" : "My skills"}
-      </h1>
+      </motion.h1>
 
       <div className="skills-box">
-        <div
+        <motion.div
           className={` skill-dev ${theme === "light" ? "" : "skill-dev-Dark"}`}
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
         >
           <h3 className={`${theme === "light" ? "title-light" : "title-dark"}`}>
             {language === "fr" ? "Développement web" : "Web development"}
@@ -54,11 +68,14 @@ function Skills() {
               );
             })}
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           className={` skill-tools ${
             theme === "light" ? "" : "skill-tools-dark"
           }`}
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
         >
           <h3 className={`${theme === "light" ? "title-light" : "title-dark"}`}>
             {language === "fr"
@@ -91,7 +108,7 @@ function Skills() {
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

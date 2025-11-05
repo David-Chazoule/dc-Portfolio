@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
+import { motion } from "framer-motion";
 import { aboutData } from "../../data/data.ts";
 import photo from "./img/profilePicture.jpg";
 import photoTwo from "./img/pictureTwo.jpg";
@@ -14,16 +15,45 @@ function About() {
 
   return (
     <div className={`about-container ${theme}`}>
-      <h3 className={`smallTitle ${theme === "light" ? "" : "darkWrite"}`}>
+      <motion.h3
+        className={`smallTitle ${theme === "light" ? "" : "darkWrite"}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
         {language === "fr" ? "PRESENTATION" : "PRESENTATION"}
-      </h3>
-      <h1 className={theme === "light" ? "" : "darkWrite"}>
+      </motion.h3>
+      <motion.h1
+        className={theme === "light" ? "" : "darkWrite"}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
         {language === "fr" ? aboutData.titleFr : aboutData.titleEn}
-      </h1>
+      </motion.h1>
       <div className="img-about-container">
-        <img className="picturePC" src={photo} alt="photo-DC" />
-        <img className="pictureMobile" src={photoTwo} alt="photo-DC" />
-        <div className="presentation">
+        <motion.img
+          className="picturePC"
+          src={photo}
+          alt="photo-DC"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        />
+        <motion.img
+          className="pictureMobile"
+          src={photoTwo}
+          alt="photo-DC"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        />
+        <motion.div
+          className="presentation"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
           <div className="competence-box">
             <div
               className={`competence ${
@@ -91,7 +121,7 @@ function About() {
               {language === "fr" ? aboutData.aboutTxtFr : aboutData.aboutTxtEn}
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { navbar } from "../../data/data";
+import { motion } from "framer-motion";
 
 declare module "react-icons" {
   interface IconBaseProps {
@@ -44,7 +45,12 @@ function Navbar() {
     }
   };
   return (
-    <div className="navbar-container">
+    <motion.div
+      className="navbar-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeOut", duration: 2 }}
+    >
       <ul className={`list-nav ${theme}`}>
         {navbar.map((item) => {
           const IconComponent = item.icon;
@@ -71,7 +77,7 @@ function Navbar() {
           );
         })}
       </ul>
-    </div>
+    </motion.div>
   );
 }
 
