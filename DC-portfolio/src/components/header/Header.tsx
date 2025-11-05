@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import ButtonTheme from "../UI/buttonTheme/ButtonTheme";
 import ButtonTranslate from "../UI/buttonTranslate/ButtonTranslate";
+import { motion } from "framer-motion";
 import dark from "./img/logoDark.png";
 import light from "./img/logoLight.png";
 function Header() {
@@ -20,17 +21,27 @@ function Header() {
       } `}
     >
       <div className="header-box">
-        <div className="logo">
+        <motion.div
+          className="logo"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
           {theme === "light" ? (
             <img src={light} alt="" />
           ) : (
             <img src={dark} alt="" />
           )}
-        </div>
-        <div className="settings">
+        </motion.div>
+        <motion.div
+          className="settings"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
           <ButtonTranslate />
           <ButtonTheme />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

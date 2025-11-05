@@ -65,13 +65,13 @@ function Introduction() {
           {language === "fr" ? "A propos de moi" : "About me"}
         </button>
       </motion.div>
-      <motion.div
-        className="container-img"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-      >
-        <div className="left-box">
+      <div className="container-img">
+        <motion.div
+          className="left-box"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
           <a href="https://www.linkedin.com/in/david-chazoule/">
             <FaLinkedin
               className={`icon-social ${theme === "light" ? "" : "icon-dark"}`}
@@ -84,8 +84,13 @@ function Introduction() {
           </a>
 
           <span className={`line ${theme === "light" ? "" : "line-dark"}`} />
-        </div>
-        <div className="middle-box">
+        </motion.div>
+        <motion.div
+          className="middle-box"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
           <div className="animation-box">
             <Lottie
               animationData={theme === "light" ? animationLight : animationDark}
@@ -93,16 +98,22 @@ function Introduction() {
               autoplay
             />
           </div>
-        </div>
-        <div className="right-box" onClick={() => scrollTo("about")}>
+        </motion.div>
+        <motion.div
+          className="right-box"
+          onClick={() => scrollTo("about")}
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
           <BsMouse
             className={`icon-mousse ${theme === "light" ? "" : "mousse-dark"}`}
           />
           <span className={theme === "light" ? "" : "writingDark"}>
             Scroll Down
           </span>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </div>
   );
 }
