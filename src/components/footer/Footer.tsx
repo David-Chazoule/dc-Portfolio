@@ -52,7 +52,7 @@ function Footer() {
         transition={{ ease: "easeOut", duration: 2 }}
       >
         <p className={theme === "light" ? "" : "pDark"}>
-          dc-portfolio-one.vercel.app/ All Rights reserved
+          portfolio.davidc.vercel.app/ All Rights reserved
         </p>
       </motion.div>
     </div>
