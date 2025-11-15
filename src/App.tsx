@@ -10,7 +10,7 @@ import Skills from "./components/skills/Skills";
 import ScrollObserver from "./components/hook/ScrollObserver";
 
 function App() {
-  const { sectionsRef, scrollToSection } = ScrollObserver();
+  const { sectionsRef } = ScrollObserver();
   return (
     <div className="app">
       <Header />
