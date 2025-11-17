@@ -214,7 +214,7 @@ export const projectTitle = {
 export const project: projectCardType[] = [
   {
     id: 1,
-    img: "listUp",
+    img: "porfoliov2",
     titleFr: "Portfolio V2",
     titleEn: "Portfolio V2",
     descriptionFr:

@@ -18,28 +18,31 @@ type Project = {
   liveLink: string;
   icon: IconType[];
 };
-
+// Props for the modal component
 type Props = {
-  project: Project | null;
-  onClose: () => void;
+  project: Project | null; // The project to display, or null to hide the modal
+  onClose: () => void; // Callback when the modal closes
 };
 
 function ProjectModal({ project, onClose }: Props) {
+  // Controls the fade-out animation
   const [closing, setClosing] = useState(false);
   const { theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
 
+  // Lock scroll when modal is open, restore it when closed
   useEffect(() => {
     if (project) {
       const scrollY = window.scrollY;
-
+      // Freeze background scroll
       document.body.style.overflow = "hidden";
       document.body.style.position = "fixed";
       document.body.style.top = `-${scrollY}px`;
       document.body.style.width = "100%";
-
+      // Save scroll position
       document.body.dataset.savedScroll = scrollY.toString();
     } else {
+      // Restore scroll when modal closes
       const savedScroll = document.body.dataset.savedScroll;
       document.body.style.overflow = "";
       document.body.style.position = "";
@@ -51,6 +54,7 @@ function ProjectModal({ project, onClose }: Props) {
       }
     }
 
+    // Cleanup on unmount
     return () => {
       document.body.style.overflow = "";
       document.body.style.position = "";
@@ -62,14 +66,15 @@ function ProjectModal({ project, onClose }: Props) {
       }
     };
   }, [project]);
+  // If no project is selected, modal doesn't render
   if (!project) return null;
-
+  // Handle closing animation, then trigger parent callback
   const handleClose = () => {
     setClosing(true);
     setTimeout(() => {
       onClose();
       setClosing(false);
-    }, 300);
+    }, 300); // Duration matches CSS animation
   };
 
   return (
