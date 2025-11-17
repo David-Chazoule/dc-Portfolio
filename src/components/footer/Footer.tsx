@@ -7,8 +7,11 @@ function Footer() {
   const { theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
 
+  // Function to smoothly scroll to a section based on its HTML id
   const scrollTo = (id: string) => {
+    // Find the element with the given ID
     const element = document.getElementById(id);
+    // If the element exists, smoothly scroll to it
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
