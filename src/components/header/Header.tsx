@@ -9,9 +9,13 @@ function Header() {
   const { theme } = useContext(ThemeContext);
   const [scrolled, setScrolled] = useState(false);
 
+  // Detect scroll to update UI when the user scrolls down the page
   useEffect(() => {
+    // Function checks if the user has scrolled more than 10px
     const handleScroll = () => setScrolled(window.scrollY > 10);
+    // Add scroll listener on component mount
     window.addEventListener("scroll", handleScroll);
+    // Clean up the listener when component unmounts
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
