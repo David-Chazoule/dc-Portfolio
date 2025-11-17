@@ -12,6 +12,7 @@ function Introduction() {
   const { theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
 
+  // Smooth scroll to a section by its element ID
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -19,10 +20,11 @@ function Introduction() {
     }
   };
 
+  // Trigger the download of the CV PDF programmatically
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/DavidChazoule_CV.pdf";
-    link.download = "CV-DavidChazoule.pdf";
+    link.href = "/DavidChazoule_CV.pdf"; // File location
+    link.download = "CV-DavidChazoule.pdf"; // Downloaded file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
