@@ -9,15 +9,16 @@ function Contact() {
   const { theme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
 
+  // Function to send the email using EmailJS
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!form.current) return;
+    if (!form.current) return; // Prevent sending if form reference is missing
     emailjs
       .sendForm(
-        "service_hmzbkuw",
-        "template_0mh4nso",
-        form.current,
-        "t8uciT4BW5C9SZHxh"
+        "service_hmzbkuw", // EmailJS service ID
+        "template_0mh4nso", // EmailJS template ID
+        form.current, // The form reference
+        "t8uciT4BW5C9SZHxh" // Public API key
       )
       .then(
         (result) => {
@@ -27,7 +28,7 @@ function Contact() {
           console.log(error.text);
         }
       );
-    form.current.reset();
+    form.current.reset(); // Clear the form after submission
   };
 
   return (
