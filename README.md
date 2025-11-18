@@ -29,7 +29,7 @@ To set up and run the application locally, follow these steps:
     ```
 2. Start the application:
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Project Structure
@@ -40,3 +40,4 @@ Here's an overview of the project structure:
   - **`components/`**: Reusable React components.
   - **`Context/`**: For handling light and dark mode.
   - **`styles/`**: Sass files for styling.
+  - - **`data/`**: data files.
