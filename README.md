@@ -38,6 +38,16 @@ Here's an overview of the project structure:
 
   - **`src/`**: Contains the source code for the application.
   - **`components/`**: Reusable React components.
-  - **`Context/`**: For handling light and dark mode.
+  - **`Context/`**: For handling light and dark mode and language switching.
   - **`styles/`**: Sass files for styling.
   - **`data/`**: data files.
+
+## Features
+
+ - Responsive layout.
+ - Light/Dark mode via React Context.
+ - FR/EN language switching via React Context.
+ - Smooth animations (Framer Motion).
+ - Clean and reusable component structure.
+ - Strong typing with TypeScript.
+ - Simple, maintainable, and easily extensible architecture.
