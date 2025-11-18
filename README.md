@@ -9,7 +9,7 @@
 
   #About
 This project is the application version 2 of my portfolio. It contains information about me, the technologies I use, and various projects.
-[online here](https://david-chazoule.github.io/Portfolio/)
+[online here](https://dc-portfolio-one.vercel.app/)
 
 ## Technologies Used
 
