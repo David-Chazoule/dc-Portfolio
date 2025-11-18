@@ -40,4 +40,4 @@ Here's an overview of the project structure:
   - **`components/`**: Reusable React components.
   - **`Context/`**: For handling light and dark mode.
   - **`styles/`**: Sass files for styling.
-  - - **`data/`**: data files.
+  - **`data/`**: data files.
