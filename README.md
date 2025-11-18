@@ -1,7 +1,8 @@
 # Portfolio
   
 <img src="https://i.imgur.com/oJrceHn.png" alt="portfolio home screen" style="width:600px; height:auto;">
-<img src="https://i.imgur.com/yHpA2Z1.png" alt="about portfolio screen" style="width:200px; height:auto;"><img src="https://i.imgur.com/SPiEJpG.png" alt="skills portfolio screen" style="width:200px; height:auto;"><img src="https://i.imgur.com/6TOVQ1a.png" alt="projects portfolio screen" style="width:200px; height:auto;">
+<div style="display:flex; gap:10px;">
+<img src="https://i.imgur.com/yHpA2Z1.png" alt="about portfolio screen" style="width:200px; height:auto;"><img src="https://i.imgur.com/SPiEJpG.png" alt="skills portfolio screen" style="width:200px; height:auto;"><img src="https://i.imgur.com/6TOVQ1a.png" alt="projects portfolio screen" style="width:200px; height:auto;"></div>
 
 
 
