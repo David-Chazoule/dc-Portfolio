@@ -65,7 +65,9 @@
         max-width: 340px;
       }
     }
-
+    .darkImg {
+      border: rgba(98, 135, 255, 0.6) solid 1px;
+    }
     .modal-detail {
       display: flex;
       flex-direction: column;
@@ -142,17 +144,17 @@
               cursor: pointer;
 
               @media screen and (max-width: 600px) {
-                width: 154px;
-                font-size: 12px;
-                margin-bottom: 16px;
-                padding: 12px 0px;
+                width: 9.625rem;
+                font-size: 0.75rem;
+                margin-bottom: 1rem;
+                padding: 0.75rem 0;
               }
 
               @media screen and (max-width: 400px) {
-                width: 100px;
-                font-size: 12px;
-                margin-bottom: 16px;
-                padding: 12px 0px;
+                width: 6.25rem;
+                font-size: 0.75rem;
+                margin-bottom: 1rem;
+                padding: 0.75rem 0;
               }
 
               &:hover {

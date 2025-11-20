@@ -84,7 +84,7 @@ function ProjectModal({ project, onClose }: Props) {
           theme === "light" ? "" : "modal-content-dark"
         }`}
       >
-        <img src={`/img/${project.img}.gif`} alt={project.img + `image`} />
+        <img className={theme === "light" ? "" : "darkImg"} src={`/img/${project.img}.gif`} alt={project.img + `image`} />
 
         <div className="modal-detail">
           <h1 className={theme === "light" ? "" : "darkWrite"}>
