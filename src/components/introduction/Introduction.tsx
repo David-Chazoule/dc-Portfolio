@@ -24,7 +24,7 @@ function Introduction() {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = "/DavidChazoule_CV.pdf"; // File location
-    link.download = "CV-DavidChazoule.pdf"; // Downloaded file name
+    link.download = "CV_David_Chazoule.pdf"; // Downloaded file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
