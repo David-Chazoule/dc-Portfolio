@@ -23,7 +23,7 @@ function Introduction() {
   // Trigger the download of the CV PDF programmatically
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/DavidChazoule_CV.pdf"; // File location
+    link.href = "/CV_David_Chazoule.pdf"; // File location
     link.download = "CV_David_Chazoule.pdf"; // Downloaded file name
     document.body.appendChild(link);
     link.click();
