@@ -2,24 +2,12 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import type { IconType } from "react-icons";
-
-type Project = {
-  id: number;
-  img: string;
-  titleFr: string;
-  titleEn: string;
-  descriptionFr: string;
-  descriptionEn: string;
-  github: boolean;
-  githubLink: string;
-  live: boolean;
-  liveLink: string;
-  icon: IconType[];
-};
+import type { projectCardType } from '../../data/data.types';
 
 type Props = {
-  project: Project;
-  onClick: (project: Project) => void;
+  project: projectCardType
+  icon:IconType[];
+  onClick: (project: projectCardType) => void;
 };
 
 function ProjectCard({ project, onClick }: Props) {
