@@ -1,12 +1,10 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
-import type { IconType } from "react-icons";
-import type { projectCardType } from '../../data/data.types';
+import type { projectCardType } from "../../data/data.types";
 
 type Props = {
-  project: projectCardType
-  icon:IconType[];
+  project: projectCardType;
   onClick: (project: projectCardType) => void;
 };
 
