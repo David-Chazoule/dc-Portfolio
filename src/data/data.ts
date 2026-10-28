@@ -214,6 +214,23 @@ export const projectTitle = {
 export const project: projectCardType[] = [
   {
     id: 1,
+    img: "stellar",
+    titleFr: "Projet Stellar",
+    titleEn: "Stellar project",
+    descriptionFr: `Stellar est un jeu narratif de science-fiction dans lequel le joueur incarne le capitaine d'un vaisseau spatial, gère son équipage et participe à différentes missions à travers le système solaire.
+      Je conçois et développe l'interface, les mécaniques de jeu et l'univers visuel de ce projet personnel, réalisé avec Next.js, TypeScript et Sass.
+      Projet en cours de développement.`,
+    descriptionEn: `Stellar is a sci-fi narrative game where players take on the role of a spaceship captain, manage their crew, and undertake various missions across the solar system.
+      I design and develop the interface, gameplay mechanics, and visual universe of this personal project using Next.js, TypeScript, and Sass.
+      Currently under development.`,
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/project-stellar",
+    live: false,
+    liveLink: "",
+    icon: [SiNextdotjs, SiTypescript, FaSass],
+  },
+  {
+    id: 2,
     img: "porfoliov2",
     titleFr: "Portfolio V2",
     titleEn: "Portfolio V2",
@@ -228,7 +245,7 @@ export const project: projectCardType[] = [
     icon: [FaReact, SiTypescript, FaSass, FaNodeJs],
   },
   {
-    id: 2,
+    id: 3,
     img: "listUp",
     titleFr: "List-up",
     titleEn: "List-up",
@@ -244,7 +261,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 3,
+    id: 4,
     img: "crowdfunding",
     titleFr: "Page de financement participatif",
     titleEn: "Crowdfunding product page",
@@ -260,7 +277,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 4,
+    id: 5,
     img: "ProductList",
     titleFr: "Liste des produits avec panier",
     titleEn: "Space Tourism",
@@ -276,7 +293,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 5,
+    id: 6,
     img: "SpaceTourism",
     titleFr: "Tourisme spacial",
     titleEn: "Space Tourism",
@@ -291,7 +308,7 @@ export const project: projectCardType[] = [
     icon: [FaReact, SiTypescript, FaSass],
   },
   {
-    id: 6,
+    id: 7,
     img: "Todo",
     titleFr: "Todo App",
     titleEn: "Todo App",
@@ -307,7 +324,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 7,
+    id: 8,
     img: "horae",
     titleFr: "Horae",
     titleEn: "Horae",
@@ -322,7 +339,7 @@ export const project: projectCardType[] = [
     icon: [FaReact, SiTypescript, FaSass, FaNodeJs],
   },
   {
-    id: 8,
+    id: 9,
     img: "portefolio",
     titleFr: "Portfolio",
     titleEn: "Portfolio",
@@ -338,7 +355,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 9,
+    id: 10,
     img: "MesureBody",
     titleFr: "Mesure Body",
     titleEn: "Mesure Body",
@@ -354,7 +371,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 10,
+    id: 11,
     img: "filterJob",
     titleFr: "Job listing",
     titleEn: "Job listing",
@@ -370,7 +387,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 11,
+    id: 12,
     img: "mortgage_1",
     titleFr: "Calculateur de remboursement",
     titleEn: "Montgage repayment calculator",
@@ -388,7 +405,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 12,
+    id: 13,
     img: "ageCalculator_1",
     titleFr: "Calculateur d'âge",
     titleEn: "Age calculator",
@@ -404,7 +421,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 13,
+    id: 14,
     img: "tip_1",
     titleFr: "Calculateur de pourboire",
     titleEn: "Tip calculator",
@@ -419,7 +436,7 @@ export const project: projectCardType[] = [
     icon: [FaReact, FaJs, FaSass],
   },
   {
-    id: 14,
+    id: 15,
     img: "card_1",
     titleFr: "Carte interactive",
     titleEn: "Interactive card detail",
@@ -435,7 +452,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 15,
+    id: 16,
     img: "password_1",
     titleFr: "Générateur de mot de passe",
     titleEn: "Password Generator",
@@ -451,7 +468,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 16,
+    id: 17,
     img: "technologeek",
     titleFr: "Technologeek",
     titleEn: "Technologeek",
@@ -469,7 +486,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 17,
+    id: 18,
     img: "NumeroVert",
     titleFr: "Numero Vert",
     titleEn: "Green number",
@@ -484,7 +501,7 @@ export const project: projectCardType[] = [
     icon: [FaReact, FaJs, FaCss3Alt, FaNodeJs],
   },
   {
-    id: 18,
+    id: 19,
     img: "centrex",
     titleFr: "Téléphonie centrex",
     titleEn: "Centrex telephony",
@@ -499,7 +516,7 @@ export const project: projectCardType[] = [
     icon: [FaReact, FaJs, FaCss3Alt, FaNodeJs],
   },
   {
-    id: 19,
+    id: 20,
     img: "vert",
     titleFr: "Standard virtuel",
     titleEn: "Virtual switchboard",
@@ -515,7 +532,7 @@ export const project: projectCardType[] = [
   },
 
   {
-    id: 20,
+    id: 21,
     img: "MarsWebSite",
     titleFr: "Mars Ma Zon",
     titleEn: "Mars Ma Zon",
